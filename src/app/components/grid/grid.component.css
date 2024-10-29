@@ -92,7 +92,7 @@
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta la cantidad de columnas según el tamaño */
     gap: 10px;
     padding: 20px;
-    background-color: #ff9900; /* Color de fondo*/
+    background-color: #cf8516; /* Color de fondo*/
     text-align: center;
 
 }
@@ -109,6 +109,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: sans-serif;
 }
 
 .grid-item-PL{
@@ -121,6 +122,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: sans-serif;
 }
 
 .grid-item-SerieA{
@@ -133,6 +135,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: sans-serif;
 }
 
 .grid-item-LaLiga{
@@ -145,6 +148,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: sans-serif;
 }
 
 
