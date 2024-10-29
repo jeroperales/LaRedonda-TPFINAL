@@ -83,6 +83,35 @@
     cursor: pointer;
 }
 
+footer{
+    display:flex;
+    min-height: 90px;
+    background-color: darkgreen;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+}
 
+.list{
+    color: white;
+    text-decoration: none;
 
+}
 
+.footer-content{
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.containerFooter a{
+    color: white;
+    text-decoration: none;
+}
+
+.containerFooter a:hover{
+    color: rgb(240, 255, 30);
+    text-decoration: none;
+}
