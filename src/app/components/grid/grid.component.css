@@ -135,6 +135,17 @@
     align-items: center;
 }
 
+.grid-item-LaLiga{
+    background-color: #ffffffd3; /* Fondo item */
+    border-radius: 6%;
+    text-decoration: none; 
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 
