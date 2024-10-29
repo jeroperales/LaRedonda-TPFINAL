@@ -1,5 +1,5 @@
 
-div{
+.titulosLPF{
     display: inline-block;
     align-items: center;
     width: 100%;
@@ -13,10 +13,22 @@ div{
     padding: 1m;
 }
 
-
+.titulosPL{
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    background: #1a3c1a;
+    color: aliceblue;
+    text-shadow: 2px 2px 11px #000000;
+    text-align: center;
+    background: rgb(119, 143, 143);
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 1m;
+}
 
 /* Configuración básica para la grilla */
-.grid-container {
+.grid-LPF {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta la cantidad de columnas según el tamaño */
     gap: 10px;
@@ -25,9 +37,30 @@ div{
     text-align: center;
 }
 
+.grid-PL {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta la cantidad de columnas según el tamaño */
+    gap: 10px;
+    padding: 20px;
+    background-color: #6b8377; /* Color de fondo*/
+    text-align: center;
+}
+
 /* Estilo para cada item del grid */
 .grid-item {
-    background-color: #0d4b92; /* Fondo item */
+    background-color: #0d4b92b2; /* Fondo item */
+    border-radius: 6%;
+    text-decoration: none; 
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-item-PL{
+    background-color: #a8171788; /* Fondo item */
     border-radius: 6%;
     text-decoration: none; 
     color: white;
@@ -49,5 +82,7 @@ div{
     background-color: #3c1a32;
     cursor: pointer;
 }
+
+
 
 
