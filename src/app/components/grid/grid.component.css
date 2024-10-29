@@ -27,13 +27,44 @@
     padding: 1m;
 }
 
+.titulosSerieA{
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    background: #1a3c1a;
+    color: aliceblue;
+    text-shadow: 2px 2px 11px #000000;
+    text-align: center;
+    background: rgb(41, 9, 184);
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 1m;
+
+}
+
+.titulosLaLiga{
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    background: #1a3c1a;
+    color: aliceblue;
+    text-shadow: 2px 2px 11px #000000;
+    text-align: center;
+    background: rgb(208, 255, 0);
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 1m;
+
+}
+
+
 /* Configuración básica para la grilla */
 .grid-LPF {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta la cantidad de columnas según el tamaño */
     gap: 10px;
     padding: 20px;
-    background-color: #002110; /* Color de fondo*/
+    background-color: #ffffff; /* Color de fondo*/
     text-align: center;
 }
 
@@ -45,6 +76,27 @@
     background-color: #6b8377; /* Color de fondo*/
     text-align: center;
 }
+
+.grid-SerieA{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta la cantidad de columnas según el tamaño */
+    gap: 10px;
+    padding: 20px;
+    background-color: #750505; /* Color de fondo*/
+    text-align: center;
+
+}
+
+.grid-LaLiga{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta la cantidad de columnas según el tamaño */
+    gap: 10px;
+    padding: 20px;
+    background-color: #ff9900; /* Color de fondo*/
+    text-align: center;
+
+}
+
 
 /* Estilo para cada item del grid */
 .grid-item {
@@ -71,14 +123,62 @@
     align-items: center;
 }
 
+.grid-item-SerieA{
+    background-color: #ffffffd3; /* Fondo item */
+    border-radius: 6%;
+    text-decoration: none; 
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
 .grid-item img {
     width: 70px; /* Tamaño de la imagen */
     height: auto;
     margin-bottom: 1px;
 }
 
+
+.grid-item-PL img {
+    width: 70px; /* Tamaño de la imagen */
+    height: auto;
+    margin-bottom: 1px;
+}
+
+.grid-item-SerieA img {
+    width: 70px; /* Tamaño de la imagen */
+    height: auto;
+    margin-bottom: 1px;
+}
+
+.grid-item-LaLiga img {
+    width: 70px; /* Tamaño de la imagen */
+    height: auto;
+    margin-bottom: 1px;
+}
+
+
 /* Cambios de estilo al tocar con mouse */
 .grid-item:hover {
+    background-color: #3c1a32;
+    cursor: pointer;
+}
+.grid-item-PL:hover {
+    background-color: #3c1a32;
+    cursor: pointer;
+}
+.grid-item-SerieA:hover {
+    background-color: #3c1a32;
+    cursor: pointer;
+}
+.grid-item-LaLiga:hover {
     background-color: #3c1a32;
     cursor: pointer;
 }
