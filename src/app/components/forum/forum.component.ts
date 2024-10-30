@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+
 @Component({
-  selector: 'app-interfaz',
+  selector: 'app-forum',
   standalone: true,
   imports: [RouterModule],
-  templateUrl: './interfaz.component.html',
-  styleUrl: './interfaz.component.css'
+  templateUrl: './forum.component.html',
+  styleUrl: './forum.component.css'
 })
-export class InterfazComponent {
+export class ForumComponent {
 
 }

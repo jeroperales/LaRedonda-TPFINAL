@@ -1,0 +1,44 @@
+footer{
+    display:flex;
+    min-height: 90px;
+    background-color: darkgreen;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.list{
+    color: white;
+    text-decoration: none;
+
+}
+
+.footer-content{
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 2px 11px #000000;
+}
+
+.logo{
+
+    height: 30px;
+}
+
+
+.containerFooter a{
+    color: white;
+    text-decoration: none;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.containerFooter a:hover{
+    color: rgb(240, 255, 30);
+    text-decoration: none;
+}
