@@ -1,6 +1,10 @@
+@import "primeicons/primeicons.css";
+
+
 body{
     background: linear-gradient(lightgreen, rgb(254, 255, 255));
     background-repeat: no-repeat;
     background-attachment: fixed;
 
 }
+
