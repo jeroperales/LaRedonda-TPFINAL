@@ -26,7 +26,7 @@ import { EquiposComponent } from './components/equipos/equipos.component';
     InputTextModule,
     ReactiveFormsModule,
     ButtonModule,
-    EquiposComponent
+    EquiposComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
