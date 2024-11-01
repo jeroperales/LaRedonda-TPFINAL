@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
-import { InterfazComponent } from './components/interfaz/interfaz.component';
+import { HeaderComponent } from './components/header/header.component';
 import { ForumComponent } from './components/forum/forum.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
@@ -17,7 +17,7 @@ import { EquiposComponent } from './components/equipos/equipos.component';
   standalone: true,
   imports: [
     RouterOutlet, 
-    InterfazComponent,
+    HeaderComponent,
     ForumComponent,
     FooterComponent,
     LoginComponent,

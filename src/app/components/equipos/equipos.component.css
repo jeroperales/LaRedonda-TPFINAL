@@ -11,6 +11,7 @@
     border: 1px solid black;
     margin: 0 auto;
     padding: 1m;
+    font-size: larger;
 }
 
 .titulosPL{
@@ -25,6 +26,7 @@
     border: 1px solid black;
     margin: 0 auto;
     padding: 1m;
+    font-size: larger;
 }
 
 .titulosSerieA{
@@ -39,7 +41,7 @@
     border: 1px solid black;
     margin: 0 auto;
     padding: 1m;
-
+    font-size: larger;
 }
 
 .titulosLaLiga{
@@ -54,7 +56,7 @@
     border: 1px solid black;
     margin: 0 auto;
     padding: 1m;
-
+    font-size: larger;
 }
 
 
@@ -64,7 +66,7 @@
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta la cantidad de columnas según el tamaño */
     gap: 10px;
     padding: 20px;
-    background-color: #ffffff; /* Color de fondo*/
+    background-color: #ffffffce; /* Color de fondo*/
     text-align: center;
 }
 
@@ -100,10 +102,10 @@
 
 /* Estilo para cada item del grid */
 .grid-item {
-    background-color: #0d4b92b2; /* Fondo item */
+    background-color: #0d4b92c0; /* Fondo item */
     border-radius: 6%;
     text-decoration: none; 
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     padding: 10px;
     display: flex;
@@ -113,7 +115,7 @@
 }
 
 .grid-item-PL{
-    background-color: #a8171788; /* Fondo item */
+    background-color: #a81717b6; /* Fondo item */
     border-radius: 6%;
     text-decoration: none; 
     color: white;
@@ -126,7 +128,7 @@
 }
 
 .grid-item-SerieA{
-    background-color: #ffffffd3; /* Fondo item */
+    background-color: #ffffffb6; /* Fondo item */
     border-radius: 6%;
     text-decoration: none; 
     color: rgb(0, 0, 0);
@@ -139,7 +141,7 @@
 }
 
 .grid-item-LaLiga{
-    background-color: #ffffffd3; /* Fondo item */
+    background-color: #ffffffaf; /* Fondo item */
     border-radius: 6%;
     text-decoration: none; 
     color: rgb(0, 0, 0);

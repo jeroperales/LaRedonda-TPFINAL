@@ -2,9 +2,9 @@
 
 
 body{
-    background: linear-gradient(lightgreen, rgb(254, 255, 255));
+    background: linear-gradient(lightgreen, rgb(2, 73, 26));
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
 
 }
 

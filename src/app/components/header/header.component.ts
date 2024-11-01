@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 @Component({
-  selector: 'app-interfaz',
+  selector: 'app-header',
   standalone: true,
   imports: [RouterModule],
-  templateUrl: './interfaz.component.html',
-  styleUrl: './interfaz.component.css'
+  templateUrl: './header.component.html',
+  styleUrl: './header.component.css'
 })
-export class InterfazComponent {
+export class HeaderComponent {
 
 }
