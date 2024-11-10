@@ -5,7 +5,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { EquiposComponent } from './components/equipos/equipos.component';
-/* import { AboutUsComponent } from './components/about-us/about-us.component'; */
+ import { AboutUsComponent } from './components/about-us/about-us.component'; 
 
 
 export const routes: Routes = [
@@ -34,10 +34,10 @@ export const routes: Routes = [
           component: EquiposComponent
         },
 
-     /*   { path:'about-us',
+      { path:'about-us',
         component: AboutUsComponent 
        },
-        */
+        
         {
           path: '', redirectTo: 'equipos', pathMatch: 'full'
         }

@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.banner{
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://blog.cognifit.com/wp-content/uploads/2019/10/futbol-1-1200x766.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    font-size: 1.2em; 
+    font-weight: bold; 
+    justify-content: space-between;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    padding: 10px; 
+    background-color: rgba(12, 78, 15, 0.5); 
+}
+
+
+/* VER SI CAMBIAMOS EL FONDO DE QUE HACEMOS POR UNO HECHO POR NOSOTROS (OSEA GERO)*/
+
+.como-lo-hacemos {
+    background-color: #ffff;
+    padding: 100px 60px;
+    height: 58vh;
+  
+    text-align: center;
+    background-image: url(https://img.freepik.com/vector-gratis/futbol-balon-futbol-aislado-blanco_1441-3630.jpg?t=st=1731253961~exp=1731257561~hmac=d586183503cb7417a0b0426aadf64bde584f94a2dfb751b9d08573b36f8cde1e&w=1380);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+.como-lo-hacemos h2{
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.columns{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.column{
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.column h3{
+    font-size: 1.3em;
+    color: #32cd32;
+    margin-bottom: 10px;
+}
+
+.column p{
+    color: #555;
+}
+
+/* NOSOTROS
+ */
+.us{
+    text-align: center;
+    background: #f5f5f5;
+    height: auto;
+    
+}
+
+.header{
+    padding-top: 60px;
+    color: #444;
+    font-size: 20px;
+    margin: auto;
+    line-height: 50px;
+    margin-bottom: 20px;
+    font-size: 1.7em;
+}
+
+.sub-us{
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team{
+    margin: 10px;
+    padding: 22px;
+    max-width: 30%;
+    cursor: pointer;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+.team:hover{
+    background: #3db66b;
+    border-radius: 12px;
+}
+
+.team img{
+    width: 200px;
+    height: 200px;
+}
+
+.name{
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.desig{
+    font-style: italic;
+    color: #4e4e4e;
+}
+
+.aboutt{
+    margin: 20px 0;
+    font-weight: lighter;
+    color: #4e4e4e;
+}
+
+.social-links{
+    margin: 14px;
+}
+
+.social-links a{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    transition: .4s;
+}
+
+.social-links a:hover{
+    transform: scale(1.5);
+}
+
+.social-links a i{
+    color: #444444;
+}
+
+@media screen and(max-width: 600px){
+    .team{
+        max-width: 100%;
+    }
+}
