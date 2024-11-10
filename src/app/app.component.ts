@@ -11,8 +11,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { EquiposComponent } from './components/equipos/equipos.component';
- import { AboutUsComponent } from './components/about-us/about-us.component'; 
-
+import { AboutUsComponent } from './components/about-us/about-us.component'; 
+import { ToastModule } from 'primeng/toast';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -28,7 +28,8 @@ import { EquiposComponent } from './components/equipos/equipos.component';
     ReactiveFormsModule,
     ButtonModule,
     EquiposComponent,
-    AboutUsComponent, 
+    AboutUsComponent,
+    ToastModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
