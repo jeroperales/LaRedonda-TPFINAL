@@ -11,6 +11,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { EquiposComponent } from './components/equipos/equipos.component';
+import { ToastModule } from 'primeng/toast';
+
 
 @Component({
   selector: 'app-root',
@@ -27,6 +29,7 @@ import { EquiposComponent } from './components/equipos/equipos.component';
     ReactiveFormsModule,
     ButtonModule,
     EquiposComponent,
+    ToastModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

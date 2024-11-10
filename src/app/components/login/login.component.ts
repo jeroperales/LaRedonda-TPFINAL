@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { CardModule } from 'primeng/card';
 import { InputTextModule } from 'primeng/inputtext';
@@ -8,6 +8,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { Button, ButtonModule } from 'primeng/button';
 import { RegisterComponent } from '../register/register.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @Component({
