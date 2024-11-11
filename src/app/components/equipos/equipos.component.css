@@ -184,19 +184,19 @@
 
 /* Cambios de estilo al tocar con mouse */
 .grid-item:hover {
-    background-color: #3c1a32;
+    background-color: #3db66b;
     cursor: pointer;
 }
 .grid-item-PL:hover {
-    background-color: #3c1a32;
+    background-color: #3db66b;
     cursor: pointer;
 }
 .grid-item-SerieA:hover {
-    background-color: #3c1a32;
+    background-color: #3db66b;
     cursor: pointer;
 }
 .grid-item-LaLiga:hover {
-    background-color: #3c1a32;
+    background-color: #3db66b;
     cursor: pointer;
 }
 

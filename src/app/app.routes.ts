@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import { Routes } from '@angular/router';
 import { ForumComponent } from './components/forum/forum.component';
 import { HeaderComponent } from './components/header/header.component';
-import { RegisterComponent } from './components/register/register.component';
-import { LoginComponent } from './components/login/login.component';
 import { EquiposComponent } from './components/equipos/equipos.component';
  import { AboutUsComponent } from './components/about-us/about-us.component'; 
 
@@ -19,15 +17,6 @@ export const routes: Routes = [
         { 
         path:'header', 
         component: HeaderComponent 
-        },
-        {
-        path: 'register',
-        component: RegisterComponent
-        },
-        {
-          path: 'login',
-          component: LoginComponent
-
         },
         {
           path: 'equipos',
