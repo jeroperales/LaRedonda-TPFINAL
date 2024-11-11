@@ -4,6 +4,8 @@ import { ForumComponent } from './components/forum/forum.component';
 import { HeaderComponent } from './components/header/header.component';
 import { EquiposComponent } from './components/equipos/equipos.component';
  import { AboutUsComponent } from './components/about-us/about-us.component'; 
+import {  TablasComponent } from './components/tablas/tablas.component';
+import { ListComponent } from './components/adminforms/list/list.component';
 
 
 export const routes: Routes = [
@@ -23,10 +25,17 @@ export const routes: Routes = [
           component: EquiposComponent
         },
 
-      { path:'about-us',
+        { path:'about-us',
         component: AboutUsComponent 
        },
-        
+        {
+          path: 'tablas',
+          component: TablasComponent
+        },
+        {
+          path: 'list',
+          component: ListComponent
+        },
         {
           path: '', redirectTo: 'equipos', pathMatch: 'full'
         }

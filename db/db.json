@@ -1,4 +1,24 @@
 {
-    "equipos" : [ {} ]
+  "equipos": [
+    {
+      "id": 1,
+      "name": "boca",
+      "fundYear": 0,
+      "nick": "concha",
+      "location": "asas",
+      "stadium": "asasas",
+      "imageUrl": "",
+      "league": "LPF"
+    },
+    {
+      "id": 2,
+      "name": "river",
+      "fundYear": 0,
+      "nick": "concha",
+      "location": "asas",
+      "stadium": "asasas",
+      "imageUrl": "",
+      "league": "LPF"
+    }
+  ]
 }
-  

@@ -1,0 +1,19 @@
+<div class="container">
+    <app-add (emitirEquipo)="addEquipo($event)"> </app-add>
+    
+    <section class="team-list">
+      <ul>
+        <li *ngFor="let item of listEquipos; let i = index">
+          <div class="team-item">
+            <span>ID: {{ item.id }} - {{ item.name }} - {{item.league}}</span>
+              
+            <!-- Modify Button -->
+            <button (click)="modifyEquipo(item.id, item)" class="btn-modify">Modify</button>
+  
+            <!-- Delete Button -->
+            <button (click)="deleteEquipo(item.id)" class="btn-delete">Delete</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>

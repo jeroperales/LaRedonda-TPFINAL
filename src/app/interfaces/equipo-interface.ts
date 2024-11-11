@@ -1,12 +1,12 @@
 export interface Equipo {
 
-    id?: number;
+    id: number;
     name: string;
     fundYear: number;
-    nick: string;
+    nick?: string;
     location: string;
     stadium: string;
-    imageUrl: string;
+    imageUrl?: string;
     league: string; //dar opciones Premier, LPF, Laliga, serieA
 
 }
