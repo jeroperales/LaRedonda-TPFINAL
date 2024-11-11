@@ -4,8 +4,8 @@ import { ForumComponent } from './components/forum/forum.component';
 import { HeaderComponent } from './components/header/header.component';
 import { EquiposComponent } from './components/equipos/equipos.component';
  import { AboutUsComponent } from './components/about-us/about-us.component'; 
-
-
+import { LoginComponent } from './components/login/login.component'; 
+import { RegisterComponent } from './components/register/register.component';
 export const routes: Routes = [
    
     {
@@ -23,10 +23,16 @@ export const routes: Routes = [
           component: EquiposComponent
         },
 
-      { path:'about-us',
+        { path:'about-us',
         component: AboutUsComponent 
-       },
-        
+        },
+         { path: 'login',
+           component: LoginComponent },
+           {
+            path: 'register',
+            component:RegisterComponent
+           },
+
         {
           path: '', redirectTo: 'equipos', pathMatch: 'full'
         }

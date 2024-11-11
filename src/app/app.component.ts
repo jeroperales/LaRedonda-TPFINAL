@@ -9,6 +9,8 @@ import { ButtonModule } from 'primeng/button';
 import { EquiposComponent } from './components/equipos/equipos.component';
 import { AboutUsComponent } from './components/about-us/about-us.component'; 
 
+
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -20,11 +22,14 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
     ReactiveFormsModule,
     EquiposComponent,
     AboutUsComponent,
+
+    
   ],
   
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 
 
 export class AppComponent {
