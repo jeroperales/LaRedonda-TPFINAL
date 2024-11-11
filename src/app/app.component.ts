@@ -12,6 +12,8 @@ import {  TablasComponent } from './components/tablas/tablas.component';
 import { ListComponent } from './components/adminforms/list/list.component';
 import { AddComponent } from './components/adminforms/add/add.component';
 
+
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -26,11 +28,13 @@ import { AddComponent } from './components/adminforms/add/add.component';
     TablasComponent,
     ListComponent,
     AddComponent
+
   ],
   
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 
 
 export class AppComponent {
