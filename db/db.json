@@ -1,4 +1,54 @@
 {
-    "equipos" : [ {} ]
+  "equipos": [
+    {
+      "id": 1,
+      "name": "boca",
+      "fundYear": 0,
+      "nick": "concha",
+      "location": "asas",
+      "stadium": "asasas",
+      "imageUrl": "LPF/boca.png",
+      "league": "LPF"
+    },
+    {
+      "id": 2,
+      "name": "river",
+      "fundYear": 0,
+      "nick": "concha",
+      "location": "asas",
+      "stadium": "asasas",
+      "imageUrl": "",
+      "league": "LPF"
+    },
+    {
+      "id": 3,
+      "name": "Racing Club",
+      "fundYear": 0,
+      "nick": "232323",
+      "location": "23232",
+      "stadium": "323232",
+      "imageUrl": "LPF/racing2.png",
+      "league": "LPF"
+    },
+    {
+      "id": 4,
+      "name": "Argentinos JR",
+      "fundYear": 0,
+      "nick": "asasas",
+      "location": "asas",
+      "stadium": "sasasas",
+      "imageUrl": "LPF/argentinos.png",
+      "league": "LPF"
+    },
+    {
+      "id": 5,
+      "name": "Atletico Tucuman",
+      "fundYear": 1902,
+      "nick": "Tucumano",
+      "location": "Tucuman",
+      "stadium": "Tucustadium",
+      "imageUrl": "LPF/empty.png",
+      "league": "LPF"
+    }
+  ]
 }
-  

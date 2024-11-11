@@ -1,0 +1,81 @@
+section {
+    padding: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .team-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-item span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+  }
+  
+  /* Modify Button */
+  .btn-modify {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    text-align: center;
+  }
+  
+  .btn-modify:hover {
+    background-color: #004085;
+  }
+  
+  /* Delete Button */
+  .btn-delete {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+  }
+  
+  .btn-delete:hover {
+    background-color: #c9302c;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between; /* space out the form and list */
+    gap: 20px; /* optional: adds space between the form and list */
+  }
+  
+  app-add {
+    flex: 1; /* lets the form take available space */
+  }
+  
+  .team-list {
+    flex: 2; /* list takes up more space than the form */
+    width: 50%; /* adjust this to control the size of the team list */
+    overflow-y: auto; /* allows scrolling if the list is long */
+  }
+  
+  .team-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
