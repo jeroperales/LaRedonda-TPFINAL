@@ -44,6 +44,16 @@
 
         </select>
 
+        <label for="imageUrl">Image: </label>
+        <select formControlName="imageUrl">
+          <option *ngFor="let img of imageOptions" [value]="img">{{ img.split('/').pop() }}</option>
+        </select>
+      
+        <!-- Image Preview -->
+        <div *ngIf="formulario.get('imageUrl')?.value">
+          <img [src]="formulario.get('imageUrl')?.value" alt="Selected Image" width="100" height="100"/>
+        </div>
+
         <button class="botonAgregar" type="submit">Agregar</button>
 
     </form>

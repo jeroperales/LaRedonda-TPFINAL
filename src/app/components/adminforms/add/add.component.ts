@@ -3,11 +3,14 @@ import { Equipo } from '../../../interfaces/equipo-interface';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { EquiposComponent } from '../../equipos/equipos.component';
 import { EquiposService } from '../../../services/equipos.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-add',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule,
+    CommonModule
+  ],
   templateUrl: './add.component.html',
   styleUrl: './add.component.css'
 })
@@ -19,6 +22,16 @@ export class AddComponent {
 
   fb = inject(FormBuilder)
   equipoService = inject(EquiposService)
+
+  images: { [key: string]: string[] } = {
+    LPF: ['LPF/argentinos.png', 'LPF/atleticotucuman.png','LPF/banfield.png','LPF/barracas.png', 'LPF/belgrano.png','LPF/boca.png', 'LPF/centralcordoba.png', 'LPF/defensa.png','LPF/empty.png', 'LPF/estudiantes.png', 'LPF/gimnasia.png', 'LPF/godoycruz.png', 'LPF/huracan.png', 'LPF/independiente.png', 'LPF/independienteriv.png', 'LPF/instituto.png', 'LPF/lanus.png', 'LPF/newells.png', 'LPF/platense.png', 'LPF/racing2.png', 'LPF/riestra.png', 'LPF/river.png', 'LPF/rosariocentral.png', 'LPF/sanlorenzo.png', 'LPF/sarmiento.png', 'LPF/talleres.png', 'LPF/tigre.png', 'LPF/union.png', 'LPF/velez.png'],
+    PL: ['PL/empty.png', ''],
+    SERIEA: ['SERIEA/empty.png', ''],
+    LALIGA: ['LALIGA/empty.png', ''],
+  };
+  imageOptions: string[] = [];
+
+
 
   idGlobal: number = 0;
 
@@ -32,9 +45,17 @@ export class AddComponent {
       stadium: ["", Validators.required],
       imageUrl:[""],
       league:  ["", [Validators.required]]   //dar opciones Premier, LPF, Laliga, serieA
-
   }
 )
+
+constructor() {
+  // Actualiza las imagenes cuando cambia la liga
+  this.formulario.get('league')?.valueChanges.subscribe((selectedLeague) => {
+    this.imageOptions = this.images[selectedLeague] || [];
+    this.formulario.get('imageUrl')?.setValue(''); // Reset selected image
+  });
+}
+
 
 
 addEquipo() {
@@ -78,5 +99,8 @@ addEquipoDB(equipo: Equipo) {
     }
   )
 }
+
+
+
 
 }
