@@ -10,7 +10,7 @@
     background: cyan;
     border: 1px solid black;
     margin: 0 auto;
-    padding: 1m;
+    padding: 0.5em;
     font-size: larger;
 }
 
@@ -25,7 +25,7 @@
     background: rgb(119, 143, 143);
     border: 1px solid black;
     margin: 0 auto;
-    padding: 1m;
+    padding: 0.5em;
     font-size: larger;
 }
 
@@ -40,8 +40,8 @@
     background: rgb(41, 9, 184);
     border: 1px solid black;
     margin: 0 auto;
-    padding: 1m;
-    font-size: larger;
+    padding: 0.5em; 
+     font-size: larger;
 }
 
 .titulosLaLiga{
@@ -52,10 +52,11 @@
     color: aliceblue;
     text-shadow: 2px 2px 11px #000000;
     text-align: center;
-    background: rgb(208, 255, 0);
+
+     background: rgb(208, 255, 0);
     border: 1px solid black;
     margin: 0 auto;
-    padding: 1m;
+    padding: 0.5em;
     font-size: larger;
 }
 
@@ -183,18 +184,9 @@
 
 
 /* Cambios de estilo al tocar con mouse */
-.grid-item:hover {
-    background-color: #3db66b;
-    cursor: pointer;
-}
-.grid-item-PL:hover {
-    background-color: #3db66b;
-    cursor: pointer;
-}
-.grid-item-SerieA:hover {
-    background-color: #3db66b;
-    cursor: pointer;
-}
+.grid-item:hover,
+.grid-item-PL:hover,
+.grid-item-SerieA:hover,
 .grid-item-LaLiga:hover {
     background-color: #3db66b;
     cursor: pointer;
