@@ -8,7 +8,8 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import {  TablasComponent } from './components/tablas/tablas.component';
 import { ListComponent } from './components/adminforms/list/list.component';
-
+import { AdminGuard } from './guards/admin.guard';
+import { NotAuthorizedComponent } from './components/not-authorized/not-authorized.component'
 export const routes: Routes = [
    
     {
@@ -44,7 +45,12 @@ export const routes: Routes = [
           path: 'list',
           component: ListComponent
         },
-
+        { path: 'admin',
+           component: ListComponent, canActivate: [AdminGuard]
+        },
+        { path: 'not-authorized', 
+          component: NotAuthorizedComponent 
+        },
         {
           path: '', redirectTo: 'equipos', pathMatch: 'full'
         }

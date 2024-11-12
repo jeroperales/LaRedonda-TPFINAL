@@ -5,10 +5,10 @@
         <section class="form-group">
             <label for="email">Correo electrónico</label>
             <input type="text" id="email" autocomplete="email" formControlName="email">
-            <span *ngIf="form.controls['email'].touched && form.controls['email'].hasError('required')">
+            <span *ngIf="form.get('email')?.touched && form.get('email')?.hasError('required')">
                 El email no puede permanecer vacío
             </span>
-            <span *ngIf="form.controls['email'].touched && form.controls['email'].hasError('email')">
+            <span *ngIf="form.get('email')?.touched && form.get('email')?.hasError('email')">
                 El email no es un correo válido
             </span>
         </section>
@@ -16,10 +16,10 @@
         <section class="form-group">
             <label for="username">Nombre de Usuario</label>
             <input type="text" id="username" autocomplete="username" formControlName="username">
-            <span *ngIf="form.controls['username'].touched && form.controls['username'].hasError('required')">
+            <span *ngIf="form.get('username')?.touched && form.get('username')?.hasError('required')">
                 El nombre de usuario no puede permanecer vacío
             </span>
-            <span *ngIf="form.controls['username'].touched && form.controls['username'].hasError('minlength')">
+            <span *ngIf="form.get('username')?.touched && form.get('username')?.hasError('minlength')">
                 El nombre de usuario es muy corto
             </span>
         </section>
@@ -30,14 +30,15 @@
             <button type="button" (click)="onRevealPassword(password)" class="reveal-password">
                 👁️
             </button>
-            <span *ngIf="form.controls['password'].touched && form.controls['password'].hasError('required')">
+            <span *ngIf="form.get('password')?.touched && form.get('password')?.hasError('required')">
                 La contraseña no puede permanecer vacía
             </span>
-            <span *ngIf="form.controls['password'].touched && form.controls['password'].hasError('minlength')">
+            <span *ngIf="form.get('password')?.touched && form.get('password')?.hasError('minlength')">
                 La contraseña es muy corta
             </span>
         </section>
 
         <button type="submit" [disabled]="form.invalid" class="submit-btn">Registrarse</button>
+       <div> Ya sos usuario?<a routerLink="/login">Login</a></div>
     </fieldset>
 </form>

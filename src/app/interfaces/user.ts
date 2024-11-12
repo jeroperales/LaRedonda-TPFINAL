@@ -2,7 +2,9 @@ export interface User {
     id?: string,
     username: string,
     email?: string,
-    password: string
+    password: string,
+    isAdmin: false,
+    equipoFavorito?:number,
 }
 
 export interface ActiveUser {

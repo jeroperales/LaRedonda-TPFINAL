@@ -29,7 +29,7 @@ export class LoginComponent {
         if (loggedIn) {
           this.router.navigate(['/']);
         } else { 
-          console.log('error en las credenciales');
+          alert('Usuario descocido o contraseña incorrecta')
         }
       },
       error: console.log

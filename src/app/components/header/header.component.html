@@ -16,8 +16,16 @@
         <a [routerLink]="'/about-us'" class="nav-link">Sobre Nosotros</a>
         <a [routerLink]="'/forum'" class="nav-link">Foros</a>
         <a [routerLink]="'/tablas'" class="nav-link">Tablas</a>
-        </nav>
+        <a class="button" routerLink="/">Home</a>
 
+
+        @if (!activeUser) {
+        <a class="button" routerLink="/login" routerLinkActive="activebutton">Log in</a>
+        } @else {
+        <a class="button" (click)="onLogOut()">Log out</a>
+        }
+        </nav>
+        
 
     </header>
 

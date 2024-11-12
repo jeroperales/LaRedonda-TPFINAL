@@ -14,11 +14,12 @@ import { AddComponent } from './components/adminforms/add/add.component';
 
 
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet, 
+    RouterOutlet,
     HeaderComponent,
     ForumComponent,
     FooterComponent,
@@ -27,9 +28,9 @@ import { AddComponent } from './components/adminforms/add/add.component';
     AboutUsComponent,
     TablasComponent,
     ListComponent,
-    AddComponent
+    AddComponent,
 
-  ],
+],
   
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

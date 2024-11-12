@@ -26,8 +26,8 @@ export class AddComponent {
   images: { [key: string]: string[] } = {
     LPF: ['LPF/argentinos.png', 'LPF/atleticotucuman.png','LPF/banfield.png','LPF/barracas.png', 'LPF/belgrano.png','LPF/boca.png', 'LPF/centralcordoba.png', 'LPF/defensa.png','LPF/empty.png', 'LPF/estudiantes.png', 'LPF/gimnasia.png', 'LPF/godoycruz.png', 'LPF/huracan.png', 'LPF/independiente.png', 'LPF/independienteriv.png', 'LPF/instituto.png', 'LPF/lanus.png', 'LPF/newells.png', 'LPF/platense.png', 'LPF/racing2.png', 'LPF/riestra.png', 'LPF/river.png', 'LPF/rosariocentral.png', 'LPF/sanlorenzo.png', 'LPF/sarmiento.png', 'LPF/talleres.png', 'LPF/tigre.png', 'LPF/union.png', 'LPF/velez.png'],
     PL: ['PL/empty.png', ''],
-    SERIEA: ['SERIEA/empty.png','LALIGA/alaves.png','LALIGA/athletic.png','LALIGA/atlmadrid.png','LALIGA/barcelona.png','LALIGA/betis.png','LALIGA/celta.png','LALIGA/espanyol.png','LALIGA/getafe.png','LALIGA/girona.png','LALIGA/leganes.png','LALIGA/mallorca.png','LALIGA/osasuna.png','LALIGA/rayovallecano.png','LALIGA/realmadrid.png','LALIGA/realsociedad.png','LALIGA/sevilla.png','LALIGA/udlaspalmas.png','LALIGA/valencia.png','LALIGA/valladolid.png','LALIGA/villarreal.png'],
-    LALIGA: ['LALIGA/empty.png', ''],
+    SERIEA: ['SERIEA/empty.png',''],
+    LALIGA: ['LALIGA/empty.png','LALIGA/alaves.png','LALIGA/athletic.png','LALIGA/atlmadrid.png','LALIGA/barcelona.png','LALIGA/betis.png','LALIGA/celta.png','LALIGA/espanyol.png','LALIGA/getafe.png','LALIGA/girona.png','LALIGA/leganes.png','LALIGA/mallorca.png','LALIGA/osasuna.png','LALIGA/rayovallecano.png','LALIGA/realmadrid.png','LALIGA/realsociedad.png','LALIGA/sevilla.png','LALIGA/udlaspalmas.png','LALIGA/valencia.png','LALIGA/valladolid.png','LALIGA/villarreal.png'],
   };
   imageOptions: string[] = [];
 
