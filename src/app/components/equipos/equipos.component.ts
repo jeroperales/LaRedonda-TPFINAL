@@ -2,10 +2,12 @@ import { Component, inject, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { Equipo } from '../../interfaces/equipo-interface';
 import { EquiposService } from '../../services/equipos.service';
+import { HomeComponent } from "../home/home.component";
+
 @Component({
   selector: 'app-equipos',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule, HomeComponent],
   templateUrl: './equipos.component.html',
   styleUrl: './equipos.component.css'
 })

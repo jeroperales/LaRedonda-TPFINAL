@@ -8,6 +8,8 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import {  TablasComponent } from './components/tablas/tablas.component';
 import { ListComponent } from './components/adminforms/list/list.component';
+import { HomeComponent } from './components/home/home.component';
+
 
 export const routes: Routes = [
    
@@ -21,6 +23,12 @@ export const routes: Routes = [
         path:'header', 
         component: HeaderComponent 
         },
+
+        {
+          path: 'home',
+          component: HomeComponent
+        },
+
         {
           path: 'equipos',
           component: EquiposComponent
