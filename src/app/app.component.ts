@@ -11,6 +11,7 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import {  TablasComponent } from './components/tablas/tablas.component';
 import { ListComponent } from './components/adminforms/list/list.component';
 import { AddComponent } from './components/adminforms/add/add.component';
+import { DetallesEquipoComponent } from './components/detalles-equipo/detalles-equipo.component';
 
 
 
@@ -27,7 +28,8 @@ import { AddComponent } from './components/adminforms/add/add.component';
     AboutUsComponent,
     TablasComponent,
     ListComponent,
-    AddComponent
+    AddComponent,
+    DetallesEquipoComponent
 
   ],
   

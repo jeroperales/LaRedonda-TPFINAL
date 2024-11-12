@@ -57,9 +57,12 @@ section {
   }
 
   .container {
-    display: flex;
-    justify-content: space-between; /* space out the form and list */
-    gap: 20px; /* optional: adds space between the form and list */
+     display: flex;
+  justify-content: space-between; /* space out the form and list */
+  gap: 20px; /* optional: adds space between the form and list */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 100vh; /* Optional: limits container height to viewport height */
   }
   
   app-add {

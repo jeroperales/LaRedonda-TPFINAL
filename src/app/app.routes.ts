@@ -8,6 +8,8 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import {  TablasComponent } from './components/tablas/tablas.component';
 import { ListComponent } from './components/adminforms/list/list.component';
+import { ModifyComponent } from './components/adminforms/modify/modify.component';
+import { DetallesEquipoComponent } from './components/detalles-equipo/detalles-equipo.component';
 
 export const routes: Routes = [
    
@@ -25,10 +27,15 @@ export const routes: Routes = [
           path: 'equipos',
           component: EquiposComponent
         },
+        {
+          path: 'detalles/:id',
+          component: DetallesEquipoComponent
+        },
 
         { path:'about-us',
         component: AboutUsComponent 
         },
+      
          { path: 'login',
            component: LoginComponent },
          {
@@ -43,6 +50,10 @@ export const routes: Routes = [
         {
           path: 'list',
           component: ListComponent
+        },
+        {
+          path: 'update/:id',
+          component: ModifyComponent
         },
 
         {
