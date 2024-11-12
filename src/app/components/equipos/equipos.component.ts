@@ -1,29 +1,35 @@
 import { Component, inject, OnInit, Pipe } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { Equipo } from '../../interfaces/equipo-interface';
 import { EquiposService } from '../../services/equipos.service';
 import { CommonModule } from '@angular/common';
+import { HomeComponent } from "../home/home.component";
 @Component({
   selector: 'app-equipos',
   standalone: true,
   imports: [RouterModule,
-    CommonModule
+    CommonModule,HomeComponent
   ],
   templateUrl: './equipos.component.html',
   styleUrl: './equipos.component.css'
 })
-export class EquiposComponent implements OnInit{
 
+
+export class EquiposComponent implements OnInit{
   ngOnInit(): void {
     this.listarEquipos()
   }
 
   listEquipos: Equipo [] = [];
-
-  currentLeague: string = 'LPF';
-
-
+  currentLeague: string = 'SERIEA';
   equipoService = inject(EquiposService)
+
+  route: ActivatedRoute = inject(ActivatedRoute);
+
+  
+  constructor(){
+    this.currentLeague = String(this.route.snapshot.params['league']);
+  };
 
   listarEquipos(){
     this.equipoService.getEquipos().subscribe({

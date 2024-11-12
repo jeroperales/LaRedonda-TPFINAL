@@ -10,6 +10,7 @@ import {  TablasComponent } from './components/tablas/tablas.component';
 import { ListComponent } from './components/adminforms/list/list.component';
 import { ModifyComponent } from './components/adminforms/modify/modify.component';
 import { DetallesEquipoComponent } from './components/detalles-equipo/detalles-equipo.component';
+import { HomeComponent } from './components/home/home.component';
 
 export const routes: Routes = [
    
@@ -18,13 +19,17 @@ export const routes: Routes = [
         path:'forum', 
         component: ForumComponent 
         }, 
+
+        { path: 'home',
+          component: HomeComponent
+        },
         
         { 
         path:'header', 
         component: HeaderComponent 
         },
         {
-          path: 'equipos',
+          path: 'equipos/:league',
           component: EquiposComponent
         },
         {
@@ -57,7 +62,10 @@ export const routes: Routes = [
         },
 
         {
-          path: '', redirectTo: 'equipos', pathMatch: 'full'
+          path: '', redirectTo: 'home', pathMatch: 'full'
+        },
+        {
+          path: '**', redirectTo: 'home', pathMatch: 'full'
         }
 
       ];
