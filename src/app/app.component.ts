@@ -15,11 +15,12 @@ import { DetallesEquipoComponent } from './components/detalles-equipo/detalles-e
 
 
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet, 
+    RouterOutlet,
     HeaderComponent,
     ForumComponent,
     FooterComponent,
@@ -31,7 +32,8 @@ import { DetallesEquipoComponent } from './components/detalles-equipo/detalles-e
     AddComponent,
     DetallesEquipoComponent
 
-  ],
+
+],
   
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
