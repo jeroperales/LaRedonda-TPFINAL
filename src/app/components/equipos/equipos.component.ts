@@ -20,7 +20,7 @@ export class EquiposComponent implements OnInit{
 
   listEquipos: Equipo [] = [];
 
-  currentLeague: string = 'LALIGA';
+  currentLeague: string = 'LPF';
 
 
   equipoService = inject(EquiposService)

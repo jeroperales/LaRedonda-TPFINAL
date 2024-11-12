@@ -86,7 +86,6 @@ addEquipo() {
   });
 }
 
-
 addEquipoDB(equipo: Equipo) {
   this.equipoService.postEquipo(equipo).subscribe(
     {
