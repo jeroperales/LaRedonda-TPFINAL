@@ -1,44 +1,43 @@
-<form [formGroup]="form" (ngSubmit)="onSubmit()">
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="register-form">
     <fieldset>
         <legend>Registrarse</legend>
-        <section>
+
+        <section class="form-group">
             <label for="email">Correo electrónico</label>
             <input type="text" id="email" autocomplete="email" formControlName="email">
-            @if (form.controls['email'].touched) {
-                @if (form.controls['email'].getError('required')) {
-                    <span>El email no puede permanecer vacío</span>
-                }
-                @if (form.controls['email'].getError('email')) {
-                    <span>El email no es un correo válido</span>
-                }
-            }
+            <span *ngIf="form.controls['email'].touched && form.controls['email'].hasError('required')">
+                El email no puede permanecer vacío
+            </span>
+            <span *ngIf="form.controls['email'].touched && form.controls['email'].hasError('email')">
+                El email no es un correo válido
+            </span>
         </section>
-        <section>
+
+        <section class="form-group">
             <label for="username">Nombre de Usuario</label>
             <input type="text" id="username" autocomplete="username" formControlName="username">
-            @if (form.controls['username'].touched) {
-                @if (form.controls['username'].getError('required')) {
-                    <span>El nombre de usuario no puede permanecer vacío</span>
-                }
-                @if (form.controls['username'].getError('minlength')) {
-                    <span>El nombre de usuario es muy corto</span>
-                }
-            }
+            <span *ngIf="form.controls['username'].touched && form.controls['username'].hasError('required')">
+                El nombre de usuario no puede permanecer vacío
+            </span>
+            <span *ngIf="form.controls['username'].touched && form.controls['username'].hasError('minlength')">
+                El nombre de usuario es muy corto
+            </span>
         </section>
-        <section>
+
+        <section class="form-group password-group">
             <label for="password">Contraseña</label>
             <input #password type="password" id="password" formControlName="password">
-            <button type="button" (click)="onRevealPassword(password)">Ojito</button>
-            @if (form.controls['password'].touched) {
-                
-                @if (form.controls['password'].getError('required')) {
-                    <span>La contraseña no puede permanecer vacía</span>
-                }
-                @if (form.controls['password'].getError('minlength')) {
-                    <span>La contraseña es muy corta</span>
-                }
-            }
+            <button type="button" (click)="onRevealPassword(password)" class="reveal-password">
+                👁️
+            </button>
+            <span *ngIf="form.controls['password'].touched && form.controls['password'].hasError('required')">
+                La contraseña no puede permanecer vacía
+            </span>
+            <span *ngIf="form.controls['password'].touched && form.controls['password'].hasError('minlength')">
+                La contraseña es muy corta
+            </span>
         </section>
-        <button type="submit" [disabled]="form.invalid">Enviar</button>
+
+        <button type="submit" [disabled]="form.invalid" class="submit-btn">Registrarse</button>
     </fieldset>
 </form>

@@ -1,15 +1,20 @@
-<form [formGroup]="form" (ngSubmit)="onLogin()">
+<form [formGroup]="form" (ngSubmit)="onLogin()" class="login-form">
     <fieldset>
         <legend>Inicio de sesión</legend>
-        <section>
+        
+        <section class="form-group">
             <label for="username">Nombre de Usuario</label>
             <input type="text" id="username" autocomplete="username" formControlName="username">
         </section>
-        <section>
+        
+        <section class="form-group password-group">
             <label for="password">Contraseña</label>
             <input #password type="password" id="password" formControlName="password">
-            <button type="button" (click)="onRevealPassword(password)">Ojito</button>
+            <button type="button" (click)="onRevealPassword(password)" class="reveal-password">
+                👁️
+            </button>
         </section>
-        <button type="submit" [disabled]="form.invalid">Iniciar sesión</button>
+        
+        <button type="submit" [disabled]="form.invalid" class="submit-btn">Iniciar sesión</button>
     </fieldset>
 </form>
