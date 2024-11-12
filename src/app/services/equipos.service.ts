@@ -3,6 +3,7 @@ import { inject, Inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Equipo } from '../interfaces/equipo-interface';
 import { map } from 'rxjs';
+import { environment } from '../../environments/environment.development';
 
 @Injectable({
   providedIn: 'root'
@@ -11,12 +12,17 @@ export class EquiposService {
 
   http = inject(HttpClient);
 
-  urlBase = 'http://localhost:3000/equipos'
+  urlBase = environment.urlBase
 
 
     //GET
     getEquipos(): Observable<Equipo[]>{
       return this.http.get<Equipo[]>(this.urlBase);
+    }
+
+    //GET BY ID
+    getEquipoByID(id: number): Observable<Equipo>{
+      return this.http.get<Equipo>(`${this.urlBase}/${id}`)
     }
 
     //POST

@@ -1,1 +1,42 @@
-<p>modify works!</p>
+<fieldset>
+    <legend> ACTUALIZAR </legend>
+    <form [formGroup]="formulario">
+        
+        <label for="">Nombre Equipo: </label>
+        <input type="text"
+        formControlName="name"
+        />
+
+        <label for="">Año de Fundacion: </label>
+        <input type="number"
+        formControlName="fundYear"
+        />
+
+        <label for="">Apodo: </label>
+        <input type="text"
+        formControlName="nick"
+        />
+
+        <label for="">Ubicacion: </label>
+        <input type="text"
+        formControlName="location"
+        />
+
+        <label for="">Estadio: </label>
+        <input type="text"
+        formControlName="stadium"
+        />
+
+
+        <label for="">Liga: </label>
+        <select formControlName="league">
+            <option value="LPF">Liga Profesional Argentina</option>
+            <option value="PL">Premier League</option>
+            <option value="SERIEA">Serie A</option>
+            <option value="LALIGA">La Liga</option>
+
+        </select>
+
+
+    </form>
+</fieldset>
