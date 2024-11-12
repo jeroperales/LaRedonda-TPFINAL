@@ -44,12 +44,21 @@ export class ListComponent implements OnInit{
     this.listEquipos.sort((a, b) => a.id - b.id);
   }
 
-  modifyEquipo(id: number, equipo: Equipo){
+  deleteEquipo(id : number ){
+    this.equipoService.deleteEquipo(id).subscribe({
+      next: () => {
+        console.log('SE BORRO CHETO');
+      },
+      error:(e: Error) => {
+        console.log(e.message);
+      }
+    }
+  )
 
   }
 
-  deleteEquipo(id:number){
+modifyEquipo(id: number, equipo: Equipo){
 
-  }
+}
 
 }

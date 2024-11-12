@@ -1,16 +1,17 @@
 @import "primeicons/primeicons.css";
 
-
-body{
-    background: linear-gradient(lightgreen, rgb(2, 73, 26));
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-
+body {
+  background: linear-gradient(lightgreen, rgb(2, 73, 26));
+  background-repeat: no-repeat;
+  background-attachment: scroll; /* Gradient moves with content scroll */
+  min-height: 1vh; /* Ensures gradient covers the full viewport height */
+  margin: 0;
 }
 
 html,
 body {
   height: 100%;
   margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents any unwanted horizontal scroll */
 }
-

@@ -1,13 +1,15 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, OnInit, Pipe } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { Equipo } from '../../interfaces/equipo-interface';
 import { EquiposService } from '../../services/equipos.service';
+import { CommonModule } from '@angular/common';
 import { HomeComponent } from "../home/home.component";
-
 @Component({
   selector: 'app-equipos',
   standalone: true,
-  imports: [RouterModule, HomeComponent],
+  imports: [RouterModule,
+    CommonModule,HomeComponent
+  ],
   templateUrl: './equipos.component.html',
   styleUrl: './equipos.component.css'
 })
@@ -18,6 +20,8 @@ export class EquiposComponent implements OnInit{
   }
 
   listEquipos: Equipo [] = [];
+
+  currentLeague: string = 'LPF';
 
 
   equipoService = inject(EquiposService)
@@ -36,5 +40,15 @@ export class EquiposComponent implements OnInit{
 
   }
 
+  
+  get filteredTeams() {
+    return this.listEquipos.filter(team => team.league === this.currentLeague);
+  }
+
+
+
+  trackById(index: number, item: any): number {
+    return item.id;
+  }
 
 }

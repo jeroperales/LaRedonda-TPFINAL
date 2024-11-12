@@ -1,0 +1,67 @@
+.pagina-Equipo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top; /* Make sure the content is vertically centered */
+    height: 100vh;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #02521e, #4b8b9e); /* Background gradient */
+    color: #f5f9fc; /* White text */
+}
+
+.image-container {
+    width: 100%; /* Adjust the width of the image */
+    max-width: 500px; /* Limit image width */
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Soft shadow */
+    transition: transform 0.3s ease-in-out; /* Hover effect for the image */
+    background: linear-gradient(to bottom, #4b8b9e, #02521e); /* Background gradient */
+}
+
+.img {
+    width: 40%; /* Make the image take the full container width */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.details {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.nombre-label {
+    color: #d9ff00; 
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 1px 2px 4px #000000;
+}
+
+.nombre-value {
+    color: #f5f9fc;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 1px 2px 4px #000000;
+    
+}
+
+
+@media (max-width: 768px) {
+    .pagina-Equipo {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .img {
+        width: 90%; /* Image should be smaller on smaller screens */
+    }
+
+    .details {
+        width: 100%; /* Full width for details section */
+    }
+}
