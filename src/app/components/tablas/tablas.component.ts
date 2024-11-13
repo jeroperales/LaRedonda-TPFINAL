@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ApiService } from '../../services/api.service';
 import { CommonModule } from '@angular/common';
 
@@ -11,42 +11,46 @@ import { CommonModule } from '@angular/common';
 })
 
 
-export class TablasComponent  {
-  
-  
-/*   //FETCH DE LA API https://football98.p.rapidapi.com
-  leagues = [
-    { name: 'Liga Profesional Argentina', code: 'ligaprofesionalargentina' },
-    { name: 'Premier League', code: 'premierleague' },
-    { name: 'Serie A', code: 'seriea' },
-    { name: 'La Liga', code: 'laliga' }
-  ];
+export class TablasComponent  {   //implements OnInit
 
-  data: { [key: string]: any } = {}; // Guarda la info al cargar la liga
-  loading: { [key: string]: boolean } = {};
-  errors: { [key: string]: string | null } = {};
+  /* 
+  standings: any[] = [];
 
   constructor(private apiService: ApiService) {}
 
-   ngOnInit(): void {
-    // fetch de la api
-    this.leagues.forEach(league => {
-      this.loading[league.code] = true; // ejecuta estado del loading
-      this.apiService.fetchData(league.code, 'table').subscribe(
-        (response) => {
-          console.log("API response for", league.name, response);
-          this.data[league.code] = response;
-          this.loading[league.code] = false; // saca el loading una vez se carga
+  activeLeagues = [
+    { id: 39, name: 'Premier League', season: 2022 }, // Update the season as needed
+    { id: 135, name: 'Serie A', season: 2022 },
+    { id: 140, name: 'La Liga', season: 2022 },
+    { id: 128, name: 'Liga Argentina', season: 2022 }
+  ];
+
+  ngOnInit(): void {
+    // Iterar sobre las ligas definidas en activeLeagues
+    this.activeLeagues.forEach((league) => {
+      const leagueId = league.id;
+      const season = league.season;
+
+      // Obtener posiciones para cada liga
+      this.apiService.getStandings(leagueId, season).subscribe(
+        (data: any) => {
+          const leagueData = {
+            name: league.name,
+            table: data.response[0]?.league?.standings[0] || [] // Ajusta esto según la estructura de tu respuesta
+          };
+          this.standings.push(leagueData);
         },
-        (err) => {
-          this.errors[league.code] = 'No se pudo fetchear la informacion de la liga ' + league.name;
-          this.loading[league.code] = false; 
-          console.error('Error fetching para', league.name, err);
+        error => {
+          console.error('Error al cargar las posiciones para ${league.name}:', error);
         }
       );
     });
-  }  */
+  } */
+
 
 }
 
 
+
+
+  

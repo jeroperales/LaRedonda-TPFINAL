@@ -3,12 +3,18 @@ import { EquiposService } from '../../../services/equipos.service';
 import { Equipo } from '../../../interfaces/equipo-interface';
 import { AddComponent } from '../add/add.component';
 import { CommonModule } from '@angular/common';
+import { ModifyComponent } from '../modify/modify.component';
+import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-list',
   standalone: true,
   imports: [AddComponent,
-    CommonModule
+    CommonModule,
+    ModifyComponent,
+    RouterModule,
+    ReactiveFormsModule
   ],
   templateUrl: './list.component.html',
   styleUrl: './list.component.css'

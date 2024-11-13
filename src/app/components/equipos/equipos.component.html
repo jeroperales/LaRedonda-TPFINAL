@@ -10,13 +10,16 @@
     <div [ngClass]="'grid-' + currentLeague"> <!-- Cambia el grid dependiendo la liga que recibe -->
         
         <div *ngFor="let item of filteredTeams; trackBy: trackById"><!-- VACIA -->
-            <a [routerLink]="['/detalles', item.id]" class="grid-item">
+            <a [routerLink]="['/detalles', item.id, { league: currentLeague }]" class="grid-item"> <!--LE PASA LIGA, E ID DE EQUIPO -->
                 <img [src]="item.imageUrl" alt="{{item.imageUrl}}">
                 <strong>{{item.name}}</strong>
             </a>
         </div>
     </div>
+    
 </body>
+
+<button class="botonVolver" (click)="goBack()"> VOLVER ATRAS</button>
 
 
 

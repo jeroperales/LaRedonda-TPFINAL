@@ -8,7 +8,9 @@
             <span>ID: {{ item.id }} - {{ item.name }} - {{item.league}}</span>
               
             <!-- Modify Button -->
-            <button (click)="modifyEquipo(item.id, item)" class="btn-modify">Modify</button>
+            <a [routerLink]="['/update', item.id]">
+              <button class="btn-modify">Modify</button>
+            </a>
               
             <!-- Delete Button -->
             <button (click)="deleteEquipo(item.id)" class="btn-delete">Delete</button>

@@ -1,6 +1,6 @@
 <fieldset>
     <legend> ACTUALIZAR </legend>
-    <form [formGroup]="formulario">
+    <form [formGroup]="formulario" (ngSubmit)="update()">
         
         <label for="">Nombre Equipo: </label>
         <input type="text"
@@ -34,9 +34,8 @@
             <option value="PL">Premier League</option>
             <option value="SERIEA">Serie A</option>
             <option value="LALIGA">La Liga</option>
-
         </select>
 
-
+        <button class="botonAgregar" type="submit">Confirmar Cambios</button>
     </form>
 </fieldset>

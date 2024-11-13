@@ -1,0 +1,94 @@
+/* Global Styling */
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Section Styling */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    padding: 2px;
+}
+
+/* Form Fieldset Styling */
+fieldset {
+    background-color: white;
+    border: 2px solid #2c1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Legend Styling */
+legend {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Label Styling */
+label {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0 5px;
+    display: block;
+}
+
+/* Input Field Styling */
+input[type="number"],
+input[type="text"],
+input[type="url"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus,
+input[type="url"]:focus,
+select:focus {
+    outline: none;
+    border-color: #0056b3;
+    background-color: #fff;
+}
+
+
+.botonAgregar {
+    color: rgb(17, 17, 17);
+     font-size: 16px;
+      line-height: 16px;
+       padding:  4px;
+        border-radius: 0px; 
+        font-family: sans-serif; 
+        font-weight: bold; 
+        text-decoration: none; 
+        font-style: normal;
+        font-variant: normal;
+        text-transform: none;
+        background-color: chartreuse;
+      box-shadow: rgba(0, 0, 0, 0.59) -1px 5px 9px 0px; 
+       display: inline-block;}
+   
+    .botonAgregar:hover {
+        background: #cfd8d0; }
+
+    .botonAgregar:active {
+     transform: scale(0.98); 
+            
+     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+           
+         }

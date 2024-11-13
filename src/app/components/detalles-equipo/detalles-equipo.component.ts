@@ -1,5 +1,5 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 import { Equipo } from '../../interfaces/equipo-interface';
 import { EquiposService } from '../../services/equipos.service';
@@ -13,7 +13,10 @@ import { EquiposService } from '../../services/equipos.service';
 })
 export class DetallesEquipoComponent implements OnInit{
 
+  currentLeague: string | null = null;
+
   route: ActivatedRoute = inject(ActivatedRoute);
+  router: Router = inject(Router);
   equipoService = inject(EquiposService);
 
   equipo: any = null;
@@ -21,6 +24,9 @@ export class DetallesEquipoComponent implements OnInit{
 
   constructor(){
     this.idEquipo = Number(this.route.snapshot.params['id']);
+    
+    this.currentLeague = String(this.route.snapshot.params['league']);
+
   };
 
   ngOnInit(): void {
@@ -33,6 +39,15 @@ export class DetallesEquipoComponent implements OnInit{
         console.error('Error al obtener el equipo:', err);
       }
     });
+  }
+
+  //RECIBE LIGA Y LO DEVUELVE A ESE SI SE APRETA EL BOTON VOLVER
+  goBack(): void {
+    if (this.currentLeague) {
+      this.router.navigate(['/equipos/', this.currentLeague]);
+    } else {
+      this.router.navigate(['/home']);
+    }
   }
 }
 

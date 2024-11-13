@@ -6,15 +6,33 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ApiService {
-/* 
-  
-  private baseUrl = 'hhttps://football98.p.rapidapi.com'; //URL DE API
+
+  private apiUrl = 'https://v3.football.api-sports.io/';
+
+  private headers = new HttpHeaders({
+    'x-rapidapi-key': 'b5a64fe88c06820c43c4debd1e2fc2bd', // Replace with your actual API key
+  });
+
+  constructor(private http: HttpClient) {}
+
+  // Method to get active leagues
+  getActiveLeagues() {
+    return this.http.get(`${this.apiUrl}leagues?current=true`, {
+      headers: this.headers
+    });
+  }
+
+  // Existing method to get standings
+  getStandings(leagueId: number, season: number) {
+    return this.http.get(`${this.apiUrl}standings?league=${leagueId}&season=${season}`, {
+      headers: this.headers
+    });
+  }
+}
 
 
-  constructor(private http: HttpClient) { }
-
-  //FETCH DE API https://football98.p.rapidapi.com
-  fetchData(championship: string, endpoint: string, additionalInfo?: string): Observable<any>{
+      //FETCH DE API https://football98.p.rapidapi.com
+/*   fetchData(championship: string, endpoint: string, additionalInfo?: string): Observable<any>{
 
     const url = `${this.baseUrl}/${championship}/${endpoint}${additionalInfo ? `/${additionalInfo}` : ''}`;
     const headers = new HttpHeaders({
@@ -24,10 +42,8 @@ export class ApiService {
 
     return this.http.get(url, { headers });
 
-} 
- */
-
-
-  }
+}  */
+ 
+  
 
 

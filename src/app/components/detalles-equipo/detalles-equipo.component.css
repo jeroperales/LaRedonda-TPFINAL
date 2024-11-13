@@ -1,3 +1,5 @@
+
+
 .pagina-Equipo {
     display: flex;
     flex-direction: column;
@@ -8,9 +10,13 @@
     font-family: 'Arial', sans-serif;
     background: linear-gradient(to bottom, #02521e, #4b8b9e); /* Background gradient */
     color: #f5f9fc; /* White text */
+
+    opacity: 0;
+    animation: fadeIn 1s forwards;
 }
 
 .image-container {
+    margin-top: 20px;
     width: 100%; /* Adjust the width of the image */
     max-width: 500px; /* Limit image width */
     margin-bottom: 20px;
@@ -31,9 +37,10 @@
 }
 
 .details {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    background: rgba(0, 0, 0, 0.5);
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
 }
 
 .nombre-label {
@@ -41,6 +48,7 @@
     font-weight: bold;
     font-size: 24px;
     text-shadow: 1px 2px 4px #000000;
+   
 }
 
 .nombre-value {
@@ -48,7 +56,26 @@
     font-size: 22px;
     font-weight: bold;
     text-shadow: 1px 2px 4px #000000;
+    font-style: italic;
+    letter-spacing: 0.5px;
     
+}
+
+.botonVolver {
+    margin-top: 20px;
+    top: 20px;
+    left: 20px;
+    background-color: #02521e;
+    color: #f5f9fc;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.botonVolver:hover {
+    background-color: #4b8b9e;
 }
 
 
@@ -64,4 +91,11 @@
     .details {
         width: 100%; /* Full width for details section */
     }
+}
+
+
+
+
+@keyframes fadeIn {
+    to { opacity: 1; }
 }

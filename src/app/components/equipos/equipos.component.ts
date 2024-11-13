@@ -1,5 +1,5 @@
 import { Component, inject, OnInit, Pipe } from '@angular/core';
-import { ActivatedRoute, RouterModule } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { Equipo } from '../../interfaces/equipo-interface';
 import { EquiposService } from '../../services/equipos.service';
 import { CommonModule } from '@angular/common';
@@ -8,7 +8,8 @@ import { HomeComponent } from "../home/home.component";
   selector: 'app-equipos',
   standalone: true,
   imports: [RouterModule,
-    CommonModule,HomeComponent
+    CommonModule,
+    HomeComponent,
   ],
   templateUrl: './equipos.component.html',
   styleUrl: './equipos.component.css'
@@ -20,6 +21,7 @@ export class EquiposComponent implements OnInit{
     this.listarEquipos()
   }
 
+  router: Router = inject(Router);
   listEquipos: Equipo [] = [];
   currentLeague: string = 'SERIEA';
   equipoService = inject(EquiposService)
@@ -56,4 +58,12 @@ export class EquiposComponent implements OnInit{
     return item.id;
   }
 
+
+  goBack(): void {
+   
+      this.router.navigate(['/home/']);
+   
+
+  
+  }
 }

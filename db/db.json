@@ -1,43 +1,287 @@
 {
   "equipos": [
-    {"id": 1,
-    "name": "Argentinos Juniors",
-    "fundYear": 1904,
-    "nick": "El Bicho",
-   "location": "La Paternal",
-    "stadium": "Diego Armando Maradona",
-      "imageUrl": "LPF/argentinos.png",
-       "league": "LPF"},
-    {"id": 2, "name": "Atletico Tucuman", "fundYear": 1902, "nick": "El Gigante del Norte", "location": "San Miguel de Tucuman", "stadium": "Estadio Monumental Presidente Jose Fierro", "imageUrl": "LPF/atleticotucuman.png", "league": "LPF"},
-    {"id": 3, "name": "Club Atletico Banfield", "fundYear": 1896, "nick": "El Taladro", "location": "Banfield", "stadium": "Estadio Florencio Sola", "imageUrl": "LPF/banfield.png", "league": "LPF"},
-    {"id": 4, "name": "Barracas Central", "fundYear": 1904, "nick": "Los Camioneros", "location": "Barracas", "stadium": "Estadio Claudio Chiqui Tapia", "imageUrl": "LPF/barracas.png", "league": "LPF"},
-    {"id": 5, "name": "Club Atletico Belgrano", "fundYear": 1905, "nick": "Los Piratas", "location": "Cordoba", "stadium": "Estadio Mario Alberto Kempes", "imageUrl": "LPF/belgrano.png", "league": "LPF"},
-    {"id": 6, "name": "Boca Juniors", "fundYear": 1905, "nick": "Xeneize", "location": "La Boca", "stadium": "Bombonera", "imageUrl": "LPF/boca.png", "league": "LPF"},
-    {"id": 7, "name": "Central Cordoba", "fundYear": 1919, "nick": "El Ferroviario", "location": "Santiago del Estero", "stadium": "Estadio Alfredo Terrera", "imageUrl": "LPF/centralcordoba.png", "league": "LPF"},
-    {"id": 8, "name": "Defensa y Justicia", "fundYear": 1935, "nick": "El Halcon", "location": "Florencio Varela", "stadium": "Estadio Norberto Tomaghello", "imageUrl": "LPF/defensa.png", "league": "LPF"},
-    {"id": 9, "name": "Estudiantes de la Plata", "fundYear": 1905, "nick": "Los Pincharratas", "location": "La Plata", "stadium": "Jorge Luis Hirschi Stadium", "imageUrl": "LPF/estudiantes.png", "league": "LPF"},
-    {"id": 10, "name": "Gimnasia y Esgrima La Plata", "fundYear": 1887, "nick": "El Lobo", "location": "La Plata", "stadium": "Estadio Juan Carmelo Zerillo", "imageUrl": "LPF/gimnasia.png", "league": "LPF"},
-    {"id": 11, "name": "Club Deportivo Godoy Cruz Antonio Tomba", "fundYear": 1921, "nick": "Tomba", "location": "Godoy Cruz, Mendoza", "stadium": "Estadio Malvinas Argentinas", "imageUrl": "LPF/godoycruz.png", "league": "LPF"},
-    {"id": 12, "name": "Club Atlético Huracán", "fundYear": 1908, "nick": "El Globo", "location": "Parque Patricios, Buenos Aires", "stadium": "Tomás Adolfo Ducó Stadium", "imageUrl": "LPF/huracan.png", "league": "LPF"},
-    {"id": 13, "name": "Club Atlético Independiente", "fundYear": 1905, "nick": "El Rojo", "location": "Avellaneda", "stadium": "Estadio Libertadores de América", "imageUrl": "LPF/independiente.png", "league": "LPF"},
-    {"id": 14, "name": "Club Sportivo Independiente Rivadavia", "fundYear": 1913, "nick": "Azul del Parque", "location": "Ciudad de Mendoza", "stadium": "Juan Bautista Gargantini Stadium", "imageUrl": "LPF/independienteriv.png", "league": "LPF"},
-    {"id": 15, "name": "Instituto Atlético Central Córdoba", "fundYear": 1918, "nick": "La Gloria", "location": "Cordoba", "stadium": "Estadio Monumental Alta Cordoba", "imageUrl": "LPF/instituto.png", "league": "LPF"},
-    {"id": 16, "name": "Club Atlético Lanús", "fundYear": 1915, "nick": "El Granate", "location": "Lanus, Buenos Aires", "stadium": "Ciudad de Lanús - Néstor Díaz Pérez", "imageUrl": "LPF/lanus.png", "league": "LPF"},
-    {"id": 17, "name": "Newell's Old Boys", "fundYear": 1903, "nick": "Lepra", "location": "Rosario Central", "stadium": "Estadio Marcelo Bielsa", "imageUrl": "LPF/newells.png", "league": "LPF"},
-    {"id": 18, "name": "Club Atlético Platense", "fundYear": 1905, "nick": "El Calamar", "location": "Florida, Buenos Aires", "stadium": "Estadio Ciudad de Vicente López", "imageUrl": "LPF/platense.png", "league": "LPF"},
-    {"id": 19, "name": "Racing Club de Avellaneda", "fundYear": 1903, "nick": "La Academia", "location": "Avellaneda", "stadium": "Estadio Presidente Perón", "imageUrl": "LPF/racing2.png", "league": "LPF"},
-    {"id": 20, "name": "Deportivo Riestra", "fundYear": 1931, "nick": "El Blanquinegro", "location": "Barrio Colon, Buenos Aires", "stadium": "Club Deportivo Riestra", "imageUrl": "LPF/riestra.png", "league": "LPF"},
-    {"id": 21, "name": "River Plate", "fundYear": 2011, "nick": "El Millonario", "location": "Nuñez, Buenos Aires", "stadium": "El Mas Monumental", "imageUrl": "LPF/river.png", "league": "LPF"},
-    {"id": 22, "name": "Rosario Central", "fundYear": 1889, "nick": "Los Canallas", "location": "Rosario, Argentina", "stadium": "Estadio Gigante de Arroyito", "imageUrl": "LPF/rosariocentral.png", "league": "LPF"},
-    {"id": 23, "name": "San Lorenzo", "fundYear": 1908, "nick": "El Ciclón", "location": "Boedo, Buenos Aires", "stadium": "Estadio Pedro Bidegain", "imageUrl": "LPF/sanlorenzo.png", "league": "LPF"},
-    {"id": 24, "name": "Club Atlético Sarmiento", "fundYear": 1911, "nick": "Verdolaga", "location": "Junín, Buenos Aires", "stadium": "Eva Peron stadium", "imageUrl": "LPF/sarmiento.png", "league": "LPF"},
-    {"id": 25, "name": "Club Atlético Talleres", "fundYear": 1913, "nick": "La T", "location": "Cordoba, Argentina", "stadium": "Estadio Mario Alberto Kempes", "imageUrl": "LPF/talleres.png", "league": "LPF"},
-    {"id": 26, "name": "Club Atlético Tigre", "fundYear": 1902, "nick": "El Matador", "location": "Victoria, Buenos Aires", "stadium": "Estadio José Dellagiovanna", "imageUrl": "LPF/tigre.png", "league": "LPF"},
-    {"id": 27, "name": "Club Atlético Unión", "fundYear": 1907, "nick": "Tatengues", "location": "Santa Fe", "stadium": "Estadio 15 de Abril", "imageUrl": "LPF/union.png", "league": "LPF"},
-    {"id": 28, "name": "Club Atlético Vélez Sarsfield", "fundYear": 1910, "nick": "El Fortín", "location": "Buenos Aires, Argentina", "stadium": "Estadio José Amalfitani", "imageUrl": "LPF/velez.png", "league": "LPF"},
-   
     {
-      "id": 29,
+      "id": "1",
+      "name": "Argentinos Juniors",
+      "fundYear": 1904,
+      "nick": "El Bicho",
+      "location": "La Paternal",
+      "stadium": "Diego Armando Maradona",
+      "imageUrl": "LPF/argentinos.png",
+      "league": "LPF"
+    },
+    {
+      "id": "2",
+      "name": "Atletico Tucuman",
+      "fundYear": 1902,
+      "nick": "El Gigante del Norte",
+      "location": "San Miguel de Tucuman",
+      "stadium": "Estadio Monumental Presidente Jose Fierro",
+      "imageUrl": "LPF/atleticotucuman.png",
+      "league": "LPF"
+    },
+    {
+      "id": "3",
+      "name": "Club Atletico Banfield",
+      "fundYear": 1896,
+      "nick": "El Taladro",
+      "location": "Banfield",
+      "stadium": "Estadio Florencio Sola",
+      "imageUrl": "LPF/banfield.png",
+      "league": "LPF"
+    },
+    {
+      "id": "4",
+      "name": "Barracas Central",
+      "fundYear": 1904,
+      "nick": "Los Camioneros",
+      "location": "Barracas",
+      "stadium": "Estadio Claudio Chiqui Tapia",
+      "imageUrl": "LPF/barracas.png",
+      "league": "LPF"
+    },
+    {
+      "id": "5",
+      "name": "Club Atletico Belgrano",
+      "fundYear": 1905,
+      "nick": "Los Piratas",
+      "location": "Cordoba",
+      "stadium": "Estadio Mario Alberto Kempes",
+      "imageUrl": "LPF/belgrano.png",
+      "league": "LPF"
+    },
+    {
+      "id": "6",
+      "name": "Boca Juniors",
+      "fundYear": 1905,
+      "nick": "Xeneize",
+      "location": "La Boca",
+      "stadium": "Bombonera",
+      "imageUrl": "LPF/boca.png",
+      "league": "LPF"
+    },
+    {
+      "id": "7",
+      "name": "Central Cordoba",
+      "fundYear": 1919,
+      "nick": "El Ferroviario",
+      "location": "Santiago del Estero",
+      "stadium": "Estadio Alfredo Terrera",
+      "imageUrl": "LPF/centralcordoba.png",
+      "league": "LPF"
+    },
+    {
+      "id": "8",
+      "name": "Defensa y Justicia",
+      "fundYear": 1935,
+      "nick": "El Halcon",
+      "location": "Florencio Varela",
+      "stadium": "Estadio Norberto Tomaghello",
+      "imageUrl": "LPF/defensa.png",
+      "league": "LPF"
+    },
+    {
+      "id": "9",
+      "name": "Estudiantes de la Plata",
+      "fundYear": 1905,
+      "nick": "Los Pincharratas",
+      "location": "La Plata",
+      "stadium": "Jorge Luis Hirschi Stadium",
+      "imageUrl": "LPF/estudiantes.png",
+      "league": "LPF"
+    },
+    {
+      "id": "10",
+      "name": "Gimnasia y Esgrima La Plata",
+      "fundYear": 1887,
+      "nick": "El Lobo",
+      "location": "La Plata",
+      "stadium": "Estadio Juan Carmelo Zerillo",
+      "imageUrl": "LPF/gimnasia.png",
+      "league": "LPF"
+    },
+    {
+      "id": "11",
+      "name": "Club Deportivo Godoy Cruz Antonio Tomba",
+      "fundYear": 1921,
+      "nick": "Tomba",
+      "location": "Godoy Cruz, Mendoza",
+      "stadium": "Estadio Malvinas Argentinas",
+      "imageUrl": "LPF/godoycruz.png",
+      "league": "LPF"
+    },
+    {
+      "id": "12",
+      "name": "Club Atlético Huracán",
+      "fundYear": 1908,
+      "nick": "El Globo",
+      "location": "Parque Patricios, Buenos Aires",
+      "stadium": "Tomás Adolfo Ducó Stadium",
+      "imageUrl": "LPF/huracan.png",
+      "league": "LPF"
+    },
+    {
+      "id": "13",
+      "name": "Club Atlético Independiente",
+      "fundYear": 1905,
+      "nick": "El Rojo",
+      "location": "Avellaneda",
+      "stadium": "Estadio Libertadores de América",
+      "imageUrl": "LPF/independiente.png",
+      "league": "LPF"
+    },
+    {
+      "id": "14",
+      "name": "Club Sportivo Independiente Rivadavia",
+      "fundYear": 1913,
+      "nick": "Azul del Parque",
+      "location": "Ciudad de Mendoza",
+      "stadium": "Juan Bautista Gargantini Stadium",
+      "imageUrl": "LPF/independienteriv.png",
+      "league": "LPF"
+    },
+    {
+      "id": "15",
+      "name": "Instituto Atlético Central Córdoba",
+      "fundYear": 1918,
+      "nick": "La Gloria",
+      "location": "Cordoba",
+      "stadium": "Estadio Monumental Alta Cordoba",
+      "imageUrl": "LPF/instituto.png",
+      "league": "LPF"
+    },
+    {
+      "id": "16",
+      "name": "Club Atlético Lanús",
+      "fundYear": 1915,
+      "nick": "El Granate",
+      "location": "Lanus, Buenos Aires",
+      "stadium": "Ciudad de Lanús - Néstor Díaz Pérez",
+      "imageUrl": "LPF/lanus.png",
+      "league": "LPF"
+    },
+    {
+      "id": "17",
+      "name": "Newell's Old Boys",
+      "fundYear": 1903,
+      "nick": "Lepra",
+      "location": "Rosario Central",
+      "stadium": "Estadio Marcelo Bielsa",
+      "imageUrl": "LPF/newells.png",
+      "league": "LPF"
+    },
+    {
+      "id": "18",
+      "name": "Club Atlético Platense",
+      "fundYear": 1905,
+      "nick": "El Calamar",
+      "location": "Florida, Buenos Aires",
+      "stadium": "Estadio Ciudad de Vicente López",
+      "imageUrl": "LPF/platense.png",
+      "league": "LPF"
+    },
+    {
+      "id": "19",
+      "name": "Racing Club de Avellaneda",
+      "fundYear": 1903,
+      "nick": "La Academia",
+      "location": "Avellaneda",
+      "stadium": "Estadio Presidente Perón",
+      "imageUrl": "LPF/racing2.png",
+      "league": "LPF"
+    },
+    {
+      "id": "20",
+      "name": "Deportivo Riestra",
+      "fundYear": 1931,
+      "nick": "El Blanquinegro",
+      "location": "Barrio Colon, Buenos Aires",
+      "stadium": "Club Deportivo Riestra",
+      "imageUrl": "LPF/riestra.png",
+      "league": "LPF"
+    },
+    {
+      "id": "21",
+      "name": "River Plate",
+      "fundYear": 2011,
+      "nick": "El Millonario",
+      "location": "Nuñez, Buenos Aires",
+      "stadium": "El Mas Monumental",
+      "imageUrl": "LPF/river.png",
+      "league": "LPF"
+    },
+    {
+      "id": "22",
+      "name": "Rosario Central",
+      "fundYear": 1889,
+      "nick": "Los Canallas",
+      "location": "Rosario, Argentina",
+      "stadium": "Estadio Gigante de Arroyito",
+      "imageUrl": "LPF/rosariocentral.png",
+      "league": "LPF"
+    },
+    {
+      "id": "23",
+      "name": "San Lorenzo",
+      "fundYear": 1908,
+      "nick": "El Ciclón",
+      "location": "Boedo, Buenos Aires",
+      "stadium": "Estadio Pedro Bidegain",
+      "imageUrl": "LPF/sanlorenzo.png",
+      "league": "LPF"
+    },
+    {
+      "id": "24",
+      "name": "Club Atlético Sarmiento",
+      "fundYear": 1911,
+      "nick": "Verdolaga",
+      "location": "Junín, Buenos Aires",
+      "stadium": "Eva Peron stadium",
+      "imageUrl": "LPF/sarmiento.png",
+      "league": "LPF"
+    },
+    {
+      "id": "25",
+      "name": "Club Atlético Talleres",
+      "fundYear": 1913,
+      "nick": "La T",
+      "location": "Cordoba, Argentina",
+      "stadium": "Estadio Mario Alberto Kempes",
+      "imageUrl": "LPF/talleres.png",
+      "league": "LPF"
+    },
+    {
+      "id": "26",
+      "name": "Club Atlético Tigre",
+      "fundYear": 1902,
+      "nick": "El Matador",
+      "location": "Victoria, Buenos Aires",
+      "stadium": "Estadio José Dellagiovanna",
+      "imageUrl": "LPF/tigre.png",
+      "league": "LPF"
+    },
+    {
+      "id": "27",
+      "name": "Club Atlético Unión",
+      "fundYear": 1907,
+      "nick": "Tatengues",
+      "location": "Santa Fe",
+      "stadium": "Estadio 15 de Abril",
+      "imageUrl": "LPF/union.png",
+      "league": "LPF"
+    },
+    {
+      "id": "28",
+      "name": "Club Atlético Vélez Sarsfield",
+      "fundYear": 1910,
+      "nick": "El Fortín",
+      "location": "Buenos Aires, Argentina",
+      "stadium": "Estadio José Amalfitani",
+      "imageUrl": "LPF/velez.png",
+      "league": "LPF"
+    },
+    {
+      "id": "29",
       "name": "Liverpool",
       "fundYear": 1892,
       "nick": "The Reds",
@@ -45,9 +289,9 @@
       "stadium": "Anfield",
       "imageUrl": "PL/liverpool.png",
       "league": "PL"
-  },
-  {
-      "id": 30,
+    },
+    {
+      "id": "30",
       "name": "Manchester City",
       "fundYear": 1880,
       "nick": "The Citizens",
@@ -55,9 +299,9 @@
       "stadium": "Etihad Stadium",
       "imageUrl": "PL/manchestercity.png",
       "league": "PL"
-  },
-  {
-      "id": 31,
+    },
+    {
+      "id": "31",
       "name": "Chelsea",
       "fundYear": 1905,
       "nick": "The Blues",
@@ -65,9 +309,9 @@
       "stadium": "Stamford Bridge",
       "imageUrl": "PL/chelsea.png",
       "league": "PL"
-  },
-  {
-      "id": 32,
+    },
+    {
+      "id": "32",
       "name": "Arsenal FC",
       "fundYear": 1886,
       "nick": "The Gunners",
@@ -75,9 +319,9 @@
       "stadium": "Emirates Stadium",
       "imageUrl": "PL/arsenal.png",
       "league": "PL"
-  },
-  {
-      "id": 33,
+    },
+    {
+      "id": "33",
       "name": "Nottingham Forest",
       "fundYear": 1865,
       "nick": "Forest",
@@ -85,9 +329,9 @@
       "stadium": "City Ground",
       "imageUrl": "PL/nottingham_forest.png",
       "league": "PL"
-  },
-  {
-      "id": 34,
+    },
+    {
+      "id": "34",
       "name": "Brighton And Hove",
       "fundYear": 1901,
       "nick": "The Seagulls",
@@ -95,9 +339,9 @@
       "stadium": "Brighton Stadium",
       "imageUrl": "PL/brighton.png",
       "league": "PL"
-  },
-  {
-      "id": 35,
+    },
+    {
+      "id": "35",
       "name": "Fulham",
       "fundYear": 1879,
       "nick": "The Cottagers",
@@ -105,9 +349,9 @@
       "stadium": "Craven Cottage",
       "imageUrl": "PL/fulham.png",
       "league": "PL"
-  },
-  {
-      "id": 36,
+    },
+    {
+      "id": "36",
       "name": "Newcastle United",
       "fundYear": 1892,
       "nick": "The Magpies",
@@ -115,9 +359,9 @@
       "stadium": "St James' Park",
       "imageUrl": "PL/newcastle.png",
       "league": "PL"
-  },
-  {
-      "id": 37,
+    },
+    {
+      "id": "37",
       "name": "Aston Villa",
       "fundYear": 1874,
       "nick": "The Villans",
@@ -125,9 +369,9 @@
       "stadium": "Villa Park",
       "imageUrl": "PL/astonvilla.png",
       "league": "PL"
-  },
-  {
-      "id": 38,
+    },
+    {
+      "id": "38",
       "name": "Tottenham",
       "fundYear": 1882,
       "nick": "Spurs",
@@ -135,9 +379,9 @@
       "stadium": "Tottenham Hotspur Stadium",
       "imageUrl": "PL/tottenham.png",
       "league": "PL"
-  },
-  {
-      "id": 39,
+    },
+    {
+      "id": "39",
       "name": "Brentford",
       "fundYear": 1889,
       "nick": "The Bees",
@@ -145,9 +389,9 @@
       "stadium": "Gtech Community Stadium",
       "imageUrl": "PL/brentford.png",
       "league": "PL"
-  },
-  {
-      "id": 40,
+    },
+    {
+      "id": "40",
       "name": "Bournemouth",
       "fundYear": 1899,
       "nick": "The Cherries",
@@ -155,9 +399,9 @@
       "stadium": "Vitality Stadium",
       "imageUrl": "PL/bournemouth.png",
       "league": "PL"
-  },
-  {
-      "id": 41,
+    },
+    {
+      "id": "41",
       "name": "Manchester United",
       "fundYear": 1878,
       "nick": "The Red Devils",
@@ -165,9 +409,9 @@
       "stadium": "Old Trafford",
       "imageUrl": "PL/manchesterunited.png",
       "league": "PL"
-  },
-  {
-      "id": 42,
+    },
+    {
+      "id": "42",
       "name": "West Ham United",
       "fundYear": 1895,
       "nick": "The Hammers",
@@ -175,9 +419,9 @@
       "stadium": "London Stadium",
       "imageUrl": "PL/westham.png",
       "league": "PL"
-  },
-  {
-      "id": 43,
+    },
+    {
+      "id": "43",
       "name": "Leicester City",
       "fundYear": 1884,
       "nick": "The Foxes",
@@ -185,9 +429,9 @@
       "stadium": "King Power Stadium",
       "imageUrl": "PL/leicester.png",
       "league": "PL"
-  },
-  {
-      "id": 44,
+    },
+    {
+      "id": "44",
       "name": "Everton",
       "fundYear": 1878,
       "nick": "The Toffees",
@@ -195,9 +439,9 @@
       "stadium": "Goodison Park",
       "imageUrl": "PL/everton.png",
       "league": "PL"
-  },
-  {
-      "id": 45,
+    },
+    {
+      "id": "45",
       "name": "Ipswich Town",
       "fundYear": 1878,
       "nick": "The Tractor Boys",
@@ -205,9 +449,9 @@
       "stadium": "Portman Road",
       "imageUrl": "PL/ipswitchtown.png",
       "league": "PL"
-  },
-  {
-      "id": 46,
+    },
+    {
+      "id": "46",
       "name": "Crystal Palace",
       "fundYear": 1905,
       "nick": "The Eagles",
@@ -215,9 +459,9 @@
       "stadium": "Selhurst Park",
       "imageUrl": "PL/crystalpalace.png",
       "league": "PL"
-  },
-  {
-      "id": 47,
+    },
+    {
+      "id": "47",
       "name": "Wolverhampton",
       "fundYear": 1877,
       "nick": "Wolves",
@@ -225,9 +469,9 @@
       "stadium": "Molineux Stadium",
       "imageUrl": "PL/wolves.png",
       "league": "PL"
-  },
-  {
-      "id": 48,
+    },
+    {
+      "id": "48",
       "name": "Southampton",
       "fundYear": 1885,
       "nick": "The Saints",
@@ -235,36 +479,194 @@
       "stadium": "St Mary's Stadium",
       "imageUrl": "PL/southampton.png",
       "league": "PL"
-  },
-  {"id": 51, "name": "Cagliari", "fundYear": 1920, "nick": "I Rossoblù", "location": "Cagliari", "stadium": "Unipol Domus", "imageUrl": "SERIEA/cagliari.png", "league": "SERIEA"},
-  {"id": 52, "name": "Como", "fundYear": 1907, "nick": "I Lariani", "location": "Como", "stadium": "Stadio Giuseppe Sinigaglia", "imageUrl": "SERIEA/como.png", "league": "SERIEA"},
-  {"id": 53, "name": "Empoli", "fundYear": 1920, "nick": "Azzurri", "location": "Empoli", "stadium": "Stadio Carlo Castellani", "imageUrl": "SERIEA/empoli.png", "league": "SERIEA"},
-  {"id": 54, "name": "Fiorentina", "fundYear": 1926, "nick": "Viola", "location": "Florencia", "stadium": "Stadio Artemio Franchi", "imageUrl": "SERIEA/fiorentina.png", "league": "SERIEA"},
-  {"id": 55, "name": "Genoa", "fundYear": 1893, "nick": "Il Grifone", "location": "Génova", "stadium": "Stadio Luigi Ferraris", "imageUrl": "SERIEA/genoa.png", "league": "SERIEA"},
-  {"id": 56, "name": "Inter", "fundYear": 1908, "nick": "Nerazzurri", "location": "Milán", "stadium": "San Siro", "imageUrl": "SERIEA/inter.png", "league": "SERIEA"},
-{"id": 57, "name": "Juventus", "fundYear": 1897, "nick": "La Vecchia Signora", "location": "Turín", "stadium": "Allianz Stadium", "imageUrl": "SERIEA/juventus.png", "league": "SERIEA"},
-  {"id": 58, "name": "Lazio", "fundYear": 1900, "nick": "Biancocelesti", "location": "Roma", "stadium": "Stadio Olimpico", "imageUrl": "SERIEA/lazio.png", "league": "SERIEA"},
-  {"id": 59, "name": "Lecce", "fundYear": 1908, "nick": "Giallorossi", "location": "Lecce", "stadium": "Stadio Via del Mare", "imageUrl": "SERIEA/lecce.png", "league": "SERIEA"},
-  {"id": 60, "name": "Milan", "fundYear": 1899, "nick": "Rossoneri", "location": "Milán", "stadium": "San Siro", "imageUrl": "SERIEA/milan.png", "league": "SERIEA"},
-  {"id": 61, "name": "Monza", "fundYear": 1912, "nick": "I Biancorossi", "location": "Monza", "stadium": "U-Power Stadium", "imageUrl": "SERIEA/monza.png", "league": "SERIEA"},
-  {"id": 62, "name": "Nápoles", "fundYear": 1926, "nick": "Gli Azzurri", "location": "Nápoles", "stadium": "Stadio Diego Armando Maradona", "imageUrl": "SERIEA/Copia de napoli.png", "league": "SERIEA"},
-{"id": 63, "name": "Parma", "fundYear": 1913, "nick": "I Crociati", "location": "Parma", "stadium": "Stadio Ennio Tardini", "imageUrl": "SERIEA/parma.png", "league": "SERIEA"},
-  {"id": 64, "name": "Roma", "fundYear": 1927, "nick": "I Giallorossi", "location": "Roma", "stadium": "Stadio Olimpico", "imageUrl": "SERIEA/roma.png", "league": "SERIEA"},
-  {"id": 65, "name": "Torino", "fundYear": 1906, "nick": "Il Toro", "location": "Turín", "stadium": "Stadio Olimpico Grande Torino", "imageUrl": "SERIEA/torino.png", "league": "SERIEA"},
-  {"id": 66, "name": "Udinese", "fundYear": 1896, "nick": "I Bianconeri", "location": "Udine", "stadium": "Bluenergy Stadium", "imageUrl": "SERIEA/udinese.png", "league": "SERIEA"},
-  {"id": 67, "name": "Venezia", "fundYear": 1907, "nick": "Arancioneroverdi", "location": "Venecia", "stadium": "Stadio Pier Luigi Penzo", "imageUrl": "SERIEA/venezia.png", "league": "SERIEA"},
-  {"id": 68, "name": "Verona", "fundYear": 1903, "nick": "Gialloblu", "location": "Verona", "stadium": "Stadio Marcantonio Bentegodi", "imageUrl": "SERIEA/hellasverona.png", "league": "SERIEA"}
-
-
+    },
+    {
+      "id": "51",
+      "name": "Cagliari",
+      "fundYear": 1920,
+      "nick": "I Rossoblù",
+      "location": "Cagliari",
+      "stadium": "Unipol Domus",
+      "imageUrl": "SERIEA/cagliari.png",
+      "league": "SERIEA"
+    },
+    {
+      "id": "52",
+      "name": "Como",
+      "fundYear": 1907,
+      "nick": "I Lariani",
+      "location": "Como",
+      "stadium": "Stadio Giuseppe Sinigaglia",
+      "imageUrl": "SERIEA/como.png",
+      "league": "SERIEA"
+    },
+    {
+      "id": "53",
+      "name": "Empoli",
+      "fundYear": 1920,
+      "nick": "Azzurri",
+      "location": "Empoli",
+      "stadium": "Stadio Carlo Castellani",
+      "imageUrl": "SERIEA/empoli.png",
+      "league": "SERIEA"
+    },
+    {
+      "id": "54",
+      "name": "Fiorentina",
+      "fundYear": 1926,
+      "nick": "Viola",
+      "location": "Florencia",
+      "stadium": "Stadio Artemio Franchi",
+      "imageUrl": "SERIEA/fiorentina.png",
+      "league": "SERIEA"
+    },
+    {
+      "id": "55",
+      "name": "Genoa",
+      "fundYear": 1893,
+      "nick": "Il Grifone",
+      "location": "Génova",
+      "stadium": "Stadio Luigi Ferraris",
+      "imageUrl": "SERIEA/genoa.png",
+      "league": "SERIEA"
+    },
+    {
+      "id": "56",
+      "name": "Inter",
+      "fundYear": 1908,
+      "nick": "Nerazzurri",
+      "location": "Milán",
+      "stadium": "San Siro",
+      "imageUrl": "SERIEA/inter.png",
+      "league": "SERIEA"
+    },
+    {
+      "id": "57",
+      "name": "Juventus",
+      "fundYear": 1897,
+      "nick": "La Vecchia Signora",
+      "location": "Turín",
+      "stadium": "Allianz Stadium",
+      "imageUrl": "SERIEA/juventus.png",
+      "league": "SERIEA"
+    },
+    {
+      "id": "58",
+      "name": "Lazio",
+      "fundYear": 1900,
+      "nick": "Biancocelesti",
+      "location": "Roma",
+      "stadium": "Stadio Olimpico",
+      "imageUrl": "SERIEA/lazio.png",
+      "league": "SERIEA"
+    },
+    {
+      "id": "59",
+      "name": "Lecce",
+      "fundYear": 1908,
+      "nick": "Giallorossi",
+      "location": "Lecce",
+      "stadium": "Stadio Via del Mare",
+      "imageUrl": "SERIEA/lecce.png",
+      "league": "SERIEA"
+    },
+    {
+      "id": "60",
+      "name": "Milan",
+      "fundYear": 1899,
+      "nick": "Rossoneri",
+      "location": "Milán",
+      "stadium": "San Siro",
+      "imageUrl": "SERIEA/milan.png",
+      "league": "SERIEA"
+    },
+    {
+      "id": "61",
+      "name": "Monza",
+      "fundYear": 1912,
+      "nick": "I Biancorossi",
+      "location": "Monza",
+      "stadium": "U-Power Stadium",
+      "imageUrl": "SERIEA/monza.png",
+      "league": "SERIEA"
+    },
+    {
+      "id": "62",
+      "name": "Nápoles",
+      "fundYear": 1926,
+      "nick": "Gli Azzurri",
+      "location": "Nápoles",
+      "stadium": "Stadio Diego Armando Maradona",
+      "imageUrl": "SERIEA/Copia de napoli.png",
+      "league": "SERIEA"
+    },
+    {
+      "id": "63",
+      "name": "Parma",
+      "fundYear": 1913,
+      "nick": "I Crociati",
+      "location": "Parma",
+      "stadium": "Stadio Ennio Tardini",
+      "imageUrl": "SERIEA/parma.png",
+      "league": "SERIEA"
+    },
+    {
+      "id": "64",
+      "name": "Roma",
+      "fundYear": 1927,
+      "nick": "I Giallorossi",
+      "location": "Roma",
+      "stadium": "Stadio Olimpico",
+      "imageUrl": "SERIEA/roma.png",
+      "league": "SERIEA"
+    },
+    {
+      "id": "65",
+      "name": "Torino",
+      "fundYear": 1906,
+      "nick": "Il Toro",
+      "location": "Turín",
+      "stadium": "Stadio Olimpico Grande Torino",
+      "imageUrl": "SERIEA/torino.png",
+      "league": "SERIEA"
+    },
+    {
+      "id": "66",
+      "name": "Udinese",
+      "fundYear": 1896,
+      "nick": "I Bianconeri",
+      "location": "Udine",
+      "stadium": "Bluenergy Stadium",
+      "imageUrl": "SERIEA/udinese.png",
+      "league": "SERIEA"
+    },
+    {
+      "id": "67",
+      "name": "Venezia",
+      "fundYear": 1907,
+      "nick": "Arancioneroverdi",
+      "location": "Venecia",
+      "stadium": "Stadio Pier Luigi Penzo",
+      "imageUrl": "SERIEA/venezia.png",
+      "league": "SERIEA"
+    },
+    {
+      "id": "68",
+      "name": "Verona",
+      "fundYear": 1903,
+      "nick": "Gialloblu",
+      "location": "Verona",
+      "stadium": "Stadio Marcantonio Bentegodi",
+      "imageUrl": "SERIEA/hellasverona.png",
+      "league": "SERIEA"
+    }
   ],
- 
-      "users": [
+  "users": [
     {
       "id": "7699",
       "username": "nahu12",
       "password": "123456",
       "email": "nahu@gmail.com"
-      
     },
     {
       "id": "4291",
@@ -293,6 +695,12 @@
       "password": "123456",
       "email": "saffas@gmail.com",
       "isAdmin": true
+    },
+    {
+      "id": "df23",
+      "username": "jeroperales",
+      "password": "123456",
+      "email": "jeronimop@gmail.com"
     }
-
- ]}
+  ]
+}

@@ -1,0 +1,39 @@
+<div>
+  <h2>Tabla de Posiciones</h2>
+  <div *ngIf="standings && standings.length > 0; else noData">
+    <div *ngFor="let league of standings" class="league-container">
+      <h3>{{ league.name }}</h3>
+      <table class="standings-table">
+        <thead>
+          <tr>
+            <th>Posicion</th>
+            <th>Equipo</th>
+            <th>Puntos</th>
+            <th>Jugados</th>
+            <th>Ganados</th>
+            <th>Empatados</th>
+            <th>Perdidos</th>
+            <th>GF</th>
+            <th>GC</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let team of league.table">
+            <td>{{ team.rank }}</td>
+            <td>{{ team.team.name }}</td>
+            <td>{{ team.points }}</td>
+            <td>{{ team.all.played }}</td>
+            <td>{{ team.all.win }}</td>
+            <td>{{ team.all.draw }}</td>
+            <td>{{ team.all.lose }}</td>
+            <td>{{ team.all.goals.for }}</td>
+            <td>{{ team.all.goals.against }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <ng-template #noData>
+    <p>CARGANDO......</p>
+  </ng-template>
+</div>

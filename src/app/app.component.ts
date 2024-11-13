@@ -31,7 +31,7 @@ import { DetallesEquipoComponent } from './components/detalles-equipo/detalles-e
     ListComponent,
     AddComponent,
     DetallesEquipoComponent
-
+    
 
 ],
   

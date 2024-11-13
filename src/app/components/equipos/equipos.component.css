@@ -67,7 +67,7 @@
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta la cantidad de columnas según el tamaño */
     gap: 10px;
     padding: 20px;
-    background-color: #ffffffce; /* Color de fondo */
+    background-color: #ffffff9a; /* Color de fondo */
     text-align: center;
     
 }
@@ -86,7 +86,7 @@
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta la cantidad de columnas según el tamaño */
     gap: 10px;
     padding: 20px;
-    background-color: #750505; /* Color de fondo*/
+    background-color: rgba(117, 0, 5, 0.9); /* Color de fondo*/
     text-align: center;
 
 }
@@ -96,7 +96,7 @@
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta la cantidad de columnas según el tamaño */
     gap: 10px;
     padding: 20px;
-    background-color: #cf8516; /* Color de fondo*/
+    background-color: rgba(207, 133, 22, 0.9); /* Color de fondo*/
     text-align: center;
 
 }
@@ -116,23 +116,54 @@
     font-family: sans-serif;
     -webkit-box-shadow: 5px 5px 37px 0px rgba(0,0,0,0.29); 
     box-shadow: 5px 5px 37px 0px rgba(0,0,0,0.29);
+
+    background: linear-gradient(135deg, rgba(158, 178, 214, 0.233), rgba(255, 255, 255, 0.1));
     
-    
+ border: 1px solid rgba(255, 255, 255, 0.2);
+
+    transition: transform 0.3s ease, background-color 0.3s ease; /* TRANSICION MAS SUAVE */
 }
 
-
 .grid-item img {
-    width: 70px; /* Tamaño de la imagen */
+    width: 70px; /* TAMAÑO DE IMAGEN */
     height: auto;
     margin-bottom: 1px;
     
 }
 
-
-/* Cambios de estilo al tocar con mouse */
 .grid-item:hover {
     background-color: #00ff6270;
     cursor: pointer;
-    transform: scale(1.1); /* Slight zoom on hover */
+    transform: scale(1.1); /*LO HACE MAS GRANDE CUANDO PASAS EL MOUSE */
 }
 
+
+.botonVolver {
+   
+    margin-top: 20px;
+    top: 20px;
+    left: 20px;
+    background-color: #02521e;
+    color: #f5f9fc;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.botonVolver:hover {
+    background-color: #4b8b9e;
+}
+
+/* PARA EL CELU */
+@media (max-width: 768px) {
+    .grid-LPF, .grid-PL, .grid-SERIEA, .grid-LALIGA {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Smaller columns for mobile */
+        padding: 10px; /* Reduced padding for smaller screens */
+    }
+
+    .grid-item {
+        padding: 5px; /* Smaller padding */
+    }
+}
