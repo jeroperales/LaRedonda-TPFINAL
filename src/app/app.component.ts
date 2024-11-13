@@ -8,10 +8,10 @@ import { FormBuilder } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { EquiposComponent } from './components/equipos/equipos.component';
 import { AboutUsComponent } from './components/about-us/about-us.component'; 
-import {  TablasComponent } from './components/tablas/tablas.component';
 import { ListComponent } from './components/adminforms/list/list.component';
 import { AddComponent } from './components/adminforms/add/add.component';
 import { DetallesEquipoComponent } from './components/detalles-equipo/detalles-equipo.component';
+import { TablasComponent } from './components/tablas/tablas.component';
 
 
 
@@ -30,7 +30,8 @@ import { DetallesEquipoComponent } from './components/detalles-equipo/detalles-e
     TablasComponent,
     ListComponent,
     AddComponent,
-    DetallesEquipoComponent
+    DetallesEquipoComponent,
+    TablasComponent
 
 
 ],
