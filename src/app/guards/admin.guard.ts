@@ -14,9 +14,9 @@ export class AdminGuard implements CanActivate {
   canActivate(): Observable<boolean> {
     return this.authService.isAdmin().pipe(
       tap(isAdmin => {
-        console.log("Valor de isAdmin en el guard:", isAdmin); // Añade este log
         if (!isAdmin) {
-          this.router.navigate(['/not-authorized']);
+          this.router.navigate(['/home']);
+          alert("No tenes acceso a esta seccion");
         }
         return isAdmin;
       })

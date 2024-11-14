@@ -1,3 +1,4 @@
+
 import { HttpClient } from '@angular/common/http';
 import { inject, Inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
@@ -48,6 +49,12 @@ export class EquiposService {
           const lastId = data[data.length - 1].id;
           return lastId + 1;
         })
+      );
+    }
+    //GET EQUIPO POR NOMBRE
+    getEquipoByNombre(name: string): Observable<Equipo | undefined> {
+      return this.http.get<Equipo[]>(this.urlBase).pipe(
+        map((equipos: Equipo[]) => equipos.find(equipo => equipo.name.toLowerCase() === name.toLowerCase()))
       );
     }
 
