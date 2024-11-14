@@ -11,9 +11,9 @@ import { CommonModule } from '@angular/common';
 })
 
 
-export class TablasComponent  {   //implements OnInit
-
-  /* 
+export class TablasComponent implements OnInit
+{   
+  
   standings: any[] = [];
 
   constructor(private apiService: ApiService) {}
@@ -45,7 +45,7 @@ export class TablasComponent  {   //implements OnInit
         }
       );
     });
-  } */
+  } 
 
 
 }
