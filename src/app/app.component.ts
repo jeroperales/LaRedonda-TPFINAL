@@ -30,14 +30,8 @@ import { TablasComponent } from './components/tablas/tablas.component';
     TablasComponent,
     ListComponent,
     AddComponent,
-<<<<<<< HEAD
-    DetallesEquipoComponent
-    
-=======
     DetallesEquipoComponent,
     TablasComponent
-
->>>>>>> 72fb8113372262c3a06636d11e31864130f10284
 
 ],
   
