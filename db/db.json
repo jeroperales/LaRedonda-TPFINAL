@@ -863,45 +863,6 @@
   }
   ],
   "users": [
-    {
-      "id": "7699",
-      "username": "nahu12",
-      "password": "123456",
-      "email": "nahu@gmail.com"
-    },
-    {
-      "id": "4291",
-      "username": "giansicolo",
-      "password": "123456",
-      "email": "dadsaddf@gmail.com",
-      "isAdmin": true
-    },
-    {
-      "id": "56b8",
-      "username": "perez jose",
-      "password": "123456",
-      "email": "perezJose@gmail.com",
-      "isAdmin": true
-    },
-    {
-      "id": "b814",
-      "username": "marcosGlande",
-      "password": "123456",
-      "email": "marcosSolis@gmail.com",
-      "isAdmin": true
-    },
-    {
-      "id": "3101",
-      "username": "nahuPrueba",
-      "password": "123456",
-      "email": "saffas@gmail.com",
-      "isAdmin": true
-    },
-    {
-      "id": "df23",
-      "username": "jeroperales",
-      "password": "123456",
-      "email": "jeronimop@gmail.com"
-    }
+    
   ]
 }

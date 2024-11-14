@@ -19,10 +19,10 @@ export class TablasComponent implements OnInit
   constructor(private apiService: ApiService) {}
 
   activeLeagues = [
+    { id: 128, name: 'Liga Argentina', season: 2022 },
     { id: 39, name: 'Premier League', season: 2022 }, // Update the season as needed
     { id: 135, name: 'Serie A', season: 2022 },
-    { id: 140, name: 'La Liga', season: 2022 },
-    { id: 128, name: 'Liga Argentina', season: 2022 }
+    { id: 140, name: 'La Liga', season: 2022 }
   ];
 
   ngOnInit(): void {

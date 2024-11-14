@@ -54,6 +54,7 @@
     background: linear-gradient(to bottom, #778f8f, #6b8377); /* Background gradient */
 }
 
+
 .pagina-Equipo-SERIEA {
     display: flex;
     flex-direction: column;
@@ -68,7 +69,6 @@
     opacity: 0;
     animation: fadeIn 1s forwards;
 }
-
 
 .image-container-SERIEA {
     margin-top: 20px;
