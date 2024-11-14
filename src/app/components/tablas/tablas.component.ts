@@ -1,14 +1,19 @@
+<<<<<<< HEAD
 import { Component, inject, OnInit } from '@angular/core';
+=======
+import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
+>>>>>>> 72fb8113372262c3a06636d11e31864130f10284
 import { ApiService } from '../../services/api.service';
 import { CommonModule } from '@angular/common';
-
+import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-tablas',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,FormsModule],
   templateUrl: './tablas.component.html',
-  styleUrls: ['./tablas.component.css'],
+  styleUrls: ['./tablas.component.css']
 })
+<<<<<<< HEAD
 
 
 export class TablasComponent implements OnInit
@@ -48,6 +53,10 @@ export class TablasComponent implements OnInit
   } 
 
 
+=======
+export class TablasComponent {
+ 
+>>>>>>> 72fb8113372262c3a06636d11e31864130f10284
 }
 
 

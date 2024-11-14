@@ -5,6 +5,9 @@
         <section class="form-group">
             <label for="username">Nombre de Usuario</label>
             <input type="text" id="username" autocomplete="username" formControlName="username">
+            <span *ngIf="form.get('username')?.touched && form.get('username')?.hasError('required')">
+              username no puede permanecer vacío
+            </span>
         </section>
         
         <section class="form-group password-group">
@@ -13,6 +16,9 @@
             <button type="button" (click)="onRevealPassword(password)" class="reveal-password">
                 👁️
             </button>
+            <span *ngIf="form.get('password')?.touched && form.get('password')?.hasError('required')">
+                    password no puede permanecer vacío
+            </span>
         </section>
         <button type="submit" [disabled]="form.invalid" class="submit-btn">Iniciar sesión</button>
         <div> No tenes usuario?<a routerLink="/register">Register</a></div>
