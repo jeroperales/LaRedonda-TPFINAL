@@ -1,9 +1,9 @@
 <body>
-    <div class="pagina-Equipo">
-        <div class="image-container">
+    <div [ngClass]="'pagina-Equipo-' + currentLeague"> 
+        <div [ngClass]="'image-container-' + currentLeague">
             <img class="img" src="{{equipo.imageUrl}}" alt="{{equipo.imageUrl}}">
         </div>
-        <div class="details">
+        <div class="details"> 
             <p><span class="nombre-label">Nombre: </span><span class="nombre-value">{{equipo.name}}</span></p>
             <p><span class="nombre-label">Fundación: </span><span class="nombre-value">{{equipo.fundYear}}</span></p>
             <p><span class="nombre-label">Apodo: </span><span class="nombre-value">{{equipo.nick}}</span></p>

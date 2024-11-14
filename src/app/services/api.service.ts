@@ -15,14 +15,7 @@ export class ApiService {
 
   constructor(private http: HttpClient) {}
 
-  // Method to get active leagues
-  getActiveLeagues() {
-    return this.http.get(`${this.apiUrl}leagues?current=true`, {
-      headers: this.headers
-    });
-  }
-
-  // Existing method to get standings
+  // Devuelve posiciones segun liga (recibe por id)
   getStandings(leagueId: number, season: number) {
     return this.http.get(`${this.apiUrl}standings?league=${leagueId}&season=${season}`, {
       headers: this.headers

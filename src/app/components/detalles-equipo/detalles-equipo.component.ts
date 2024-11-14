@@ -3,11 +3,14 @@ import { Router, RouterModule } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 import { Equipo } from '../../interfaces/equipo-interface';
 import { EquiposService } from '../../services/equipos.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-detalles-equipo',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule,
+    CommonModule
+  ],
   templateUrl: './detalles-equipo.component.html',
   styleUrl: './detalles-equipo.component.css'
 })

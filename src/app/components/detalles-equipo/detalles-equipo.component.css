@@ -1,6 +1,5 @@
 
-
-.pagina-Equipo {
+.pagina-Equipo-LPF {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,14 +7,15 @@
     height: 100vh;
     text-align: center;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom, #02521e, #4b8b9e); /* Background gradient */
+    background: linear-gradient(to bottom, #023f52, #a5e9fd); /* Background gradient */
     color: #f5f9fc; /* White text */
 
     opacity: 0;
     animation: fadeIn 1s forwards;
 }
 
-.image-container {
+
+.image-container-LPF {
     margin-top: 20px;
     width: 100%; /* Adjust the width of the image */
     max-width: 500px; /* Limit image width */
@@ -23,7 +23,89 @@
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Soft shadow */
     transition: transform 0.3s ease-in-out; /* Hover effect for the image */
-    background: linear-gradient(to bottom, #4b8b9e, #02521e); /* Background gradient */
+    background: linear-gradient(to bottom, #a5e9fd, #023f52); /* Background gradient */
+}
+
+
+.pagina-Equipo-PL {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top; /* Make sure the content is vertically centered */
+    height: 100vh;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #6b8377, #0f4c5c); /* Background gradient */
+    color: #f5f9fc; /* White text */
+
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+
+.image-container-PL {
+    margin-top: 20px;
+    width: 100%; /* Adjust the width of the image */
+    max-width: 500px; /* Limit image width */
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Soft shadow */
+    transition: transform 0.3s ease-in-out; /* Hover effect for the image */
+    background: linear-gradient(to bottom, #778f8f, #6b8377); /* Background gradient */
+}
+
+.pagina-Equipo-SERIEA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top; /* Make sure the content is vertically centered */
+    height: 100vh;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #750005, #2909b8); /* Background gradient */
+    color: #f5f9fc; /* White text */
+
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+
+.image-container-SERIEA {
+    margin-top: 20px;
+    width: 100%; /* Adjust the width of the image */
+    max-width: 500px; /* Limit image width */
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Soft shadow */
+    transition: transform 0.3s ease-in-out; /* Hover effect for the image */
+    background: linear-gradient(to bottom, #2909b8, #750005); /* Background gradient */
+}
+
+.pagina-Equipo-LALIGA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top; /* Make sure the content is vertically centered */
+    height: 100vh;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #cf8516, #d0ff00); /* Background gradient */
+    color: #f5f9fc; /* White text */
+
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+
+.image-container-LALIGA {
+    margin-top: 20px;
+    width: 100%; /* Adjust the width of the image */
+    max-width: 500px; /* Limit image width */
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Soft shadow */
+    transition: transform 0.3s ease-in-out; /* Hover effect for the image */
+    background: linear-gradient(to bottom, #d0ff00, #cf8516); /* Background gradient */
 }
 
 .img {
