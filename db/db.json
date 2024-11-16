@@ -660,9 +660,8 @@
       "imageUrl": "SERIEA/hellasverona.png",
       "league": "SERIEA"
     },
-
     {
-      "id": 69,
+      "id": "69",
       "name": "Alaves",
       "fundYear": 1921,
       "nick": "Babazorros",
@@ -670,9 +669,9 @@
       "stadium": "Mendizorroza",
       "imageUrl": "LALIGA/alaves.png",
       "league": "LALIGA"
-  },
-  {
-      "id": 70,
+    },
+    {
+      "id": "70",
       "name": "Athletic Bilbao",
       "fundYear": 1898,
       "nick": "Leones",
@@ -680,9 +679,9 @@
       "stadium": "San Mamés",
       "imageUrl": "LALIGA/athletic.png",
       "league": "LALIGA"
-  },
-  {
-      "id": 71,
+    },
+    {
+      "id": "71",
       "name": "Atletico Madrid",
       "fundYear": 1903,
       "nick": "Colchoneros",
@@ -690,9 +689,9 @@
       "stadium": "Wanda Metropolitano",
       "imageUrl": "LALIGA/atlmadrid.png",
       "league": "LALIGA"
-  },
-  {
-      "id": 72,
+    },
+    {
+      "id": "72",
       "name": "Barcelona",
       "fundYear": 1899,
       "nick": "Blaugranas",
@@ -700,9 +699,9 @@
       "stadium": "Camp Nou",
       "imageUrl": "LALIGA/barcelona.png",
       "league": "LALIGA"
-  },
-  {
-      "id": 73,
+    },
+    {
+      "id": "73",
       "name": "Betis",
       "fundYear": 1907,
       "nick": "Verdiblancos",
@@ -710,9 +709,9 @@
       "stadium": "Benito Villamarín",
       "imageUrl": "LALIGA/betis.png",
       "league": "LALIGA"
-  },
-  {
-      "id": 74,
+    },
+    {
+      "id": "74",
       "name": "Celta de Vigo",
       "fundYear": 1923,
       "nick": "Celestes",
@@ -720,9 +719,9 @@
       "stadium": "Abanca Balaídos",
       "imageUrl": "LALIGA/celta.png",
       "league": "LALIGA"
-  },
-  {
-      "id": 75,
+    },
+    {
+      "id": "75",
       "name": "Espanyol",
       "fundYear": 1900,
       "nick": "Pericos",
@@ -730,9 +729,9 @@
       "stadium": "RCDE Stadium",
       "imageUrl": "LALIGA/espanyol.png",
       "league": "LALIGA"
-  },
-  {
-      "id": 76,
+    },
+    {
+      "id": "76",
       "name": "Getafe",
       "fundYear": 1983,
       "nick": "Azulones",
@@ -740,9 +739,9 @@
       "stadium": "Coliseum Alfonso Pérez",
       "imageUrl": "LALIGA/getafe.png",
       "league": "LALIGA"
-  },
-  {
-      "id": 77,
+    },
+    {
+      "id": "77",
       "name": "Girona",
       "fundYear": 1930,
       "nick": "Blanquivermells",
@@ -750,9 +749,9 @@
       "stadium": "Montilivi",
       "imageUrl": "LALIGA/girona.png",
       "league": "LALIGA"
-  },
-  {
-      "id": 78,
+    },
+    {
+      "id": "78",
       "name": "Las Palmas",
       "fundYear": 1949,
       "nick": "Amarillos",
@@ -760,9 +759,9 @@
       "stadium": "Estadio Gran Canaria",
       "imageUrl": "LALIGA/udlaspalmas.png",
       "league": "LALIGA"
-  },
-  {
-      "id": 79,
+    },
+    {
+      "id": "79",
       "name": "Leganes",
       "fundYear": 1928,
       "nick": "Pepineros",
@@ -770,9 +769,9 @@
       "stadium": "Estadio Municipal de Butarque",
       "imageUrl": "LALIGA/leganes.png",
       "league": "LALIGA"
-  },
-  {
-      "id": 80,
+    },
+    {
+      "id": "80",
       "name": "Mallorca",
       "fundYear": 1916,
       "nick": "Bermellones",
@@ -780,9 +779,9 @@
       "stadium": "Visit Mallorca Estadi",
       "imageUrl": "LALIGA/mallorca.png",
       "league": "LALIGA"
-  },
-  {
-      "id": 81,
+    },
+    {
+      "id": "81",
       "name": "Osasuna",
       "fundYear": 1920,
       "nick": "Rojillos",
@@ -790,9 +789,9 @@
       "stadium": "El Sadar",
       "imageUrl": "LALIGA/osasuna.png",
       "league": "LALIGA"
-  },
-  {
-      "id": 82,
+    },
+    {
+      "id": "82",
       "name": "Rayo Vallecano",
       "fundYear": 1924,
       "nick": "Franjirrojos",
@@ -800,9 +799,9 @@
       "stadium": "Campo de Fútbol de Vallecas",
       "imageUrl": "LALIGA/rayovallecano.png",
       "league": "LALIGA"
-  },
-  {
-      "id": 83,
+    },
+    {
+      "id": "83",
       "name": "Real Madrid",
       "fundYear": 1902,
       "nick": "Merengues",
@@ -810,9 +809,9 @@
       "stadium": "Santiago Bernabéu",
       "imageUrl": "LALIGA/realmadrid.png",
       "league": "LALIGA"
-  },
-  {
-      "id": 84,
+    },
+    {
+      "id": "84",
       "name": "Real Sociedad",
       "fundYear": 1909,
       "nick": "Txuri-urdines",
@@ -820,9 +819,9 @@
       "stadium": "Reale Arena",
       "imageUrl": "LALIGA/realsociedad.png",
       "league": "LALIGA"
-  },
-  {
-      "id": 85,
+    },
+    {
+      "id": "85",
       "name": "Sevilla",
       "fundYear": 1890,
       "nick": "Sevillistas",
@@ -830,9 +829,9 @@
       "stadium": "Ramón Sánchez-Pizjuán",
       "imageUrl": "LALIGA/sevilla.png",
       "league": "LALIGA"
-  },
-  {
-      "id": 86,
+    },
+    {
+      "id": "86",
       "name": "Valencia",
       "fundYear": 1919,
       "nick": "Ches",
@@ -840,9 +839,9 @@
       "stadium": "Mestalla",
       "imageUrl": "LALIGA/valencia.png",
       "league": "LALIGA"
-  },
-  {
-      "id": 87,
+    },
+    {
+      "id": "87",
       "name": "Valladolid",
       "fundYear": 1928,
       "nick": "Pucela",
@@ -850,9 +849,9 @@
       "stadium": "José Zorrilla",
       "imageUrl": "LALIGA/valladolid.png",
       "league": "LALIGA"
-  },
-  {
-      "id": 88,
+    },
+    {
+      "id": "88",
       "name": "Villarreal",
       "fundYear": 1923,
       "nick": "Submarino Amarillo",
@@ -860,9 +859,25 @@
       "stadium": "Estadio de la Cerámica",
       "imageUrl": "LALIGA/villarreal.png",
       "league": "LALIGA"
-  }
+    },
+    {
+      "id": "881",
+      "name": "Alemania",
+      "fundYear": 1949,
+      "nick": "El matador",
+      "location": "Alemania",
+      "stadium": "Allianz Stadium",
+      "imageUrl": "WORLD/alemania.png",
+      "league": "WORLD"
+    }
   ],
   "users": [
-    
+    {
+      "id": "d29f",
+      "username": "jeroperales",
+      "password": "123456",
+      "email": "jeronimoperales1@gmail.com",
+      "isAdmin": true
+    }
   ]
 }

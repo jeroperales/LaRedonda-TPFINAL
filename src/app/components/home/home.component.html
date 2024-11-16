@@ -21,7 +21,9 @@
 	  </div>
 	</div>
   </body>
+
 <body>
+
 	<div class="contenedor">
 		<div class="contenedor-Equipos">
 			<a [routerLink]="['/equipos', 'LPF']">
@@ -52,12 +54,31 @@
 			<a [routerLink]="['/equipos', 'LALIGA']">
 				<div class="card" style="background-image: url('Espana.jpg')">
 					<div class="textos">
-						<h3>LigaLiga</h3>
+						<h3>La Liga</h3>
+						<p>2024</p>
+					</div>
+				</div>
+			</a>
+
+			<a [routerLink]="['/equipos', 'WORLD']">
+				<div class="card" style="background-image: url('selecciones.jpg')">
+					<div class="textos">
+						<h3>Selecciones del Mundo</h3>
 						<p>2024</p>
 					</div>
 				</div>
 			</a>
 		</div>
+
+		<div class = "contenedor-square">
+			<a [routerLink]="">
+				<div class="card-square" style="background-color: rgb(204, 0, 255);">
+					<h1 class="square-text">Team Picker!</h1>
+					<h1 class="square-text">🎲</h1>
+				</div>
+			</a>
+		</div>
+
 	</div>
 </body>
 </html>

@@ -60,6 +60,21 @@
     font-size: larger;
 }
 
+.titulos-WORLD{
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    background: #1a3c1a;
+    color: aliceblue;
+    text-shadow: 2px 2px 11px #000000;
+    text-align: center;
+    background: rgb(4, 0, 255);
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 0.5em;
+    font-size: larger;
+}
+
 
 /* Configuración básica para la grilla */
 .grid-LPF {
@@ -101,6 +116,15 @@
 
 }
 
+.grid-WORLD{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta la cantidad de columnas según el tamaño */
+    gap: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Color de fondo*/
+    text-align: center;
+
+}
 
 /* Estilo para cada item del grid */
 .grid-item {

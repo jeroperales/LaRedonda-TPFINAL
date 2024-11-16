@@ -108,6 +108,33 @@
     background: linear-gradient(to bottom, #d0ff00, #cf8516); /* Background gradient */
 }
 
+.pagina-Equipo-WORLD {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top; /* Make sure the content is vertically centered */
+    height: 100vh;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #0400ff25, #06771536); /* Background gradient */
+    color: #f5f9fc; /* White text */
+
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+
+.image-container-WORLD {
+    margin-top: 20px;
+    width: 100%; /* Adjust the width of the image */
+    max-width: 500px; /* Limit image width */
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Soft shadow */
+    transition: transform 0.3s ease-in-out; /* Hover effect for the image */
+    background: linear-gradient(to bottom, #06771536, #0400ff25); /* Background gradient */
+}
+
 .img {
     width: 40%; /* Make the image take the full container width */
     height: auto;
