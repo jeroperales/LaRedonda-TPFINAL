@@ -4,6 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Equipo } from '../../interfaces/equipo-interface';
 import { EquiposService } from '../../services/equipos.service';
 import { CommonModule } from '@angular/common';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-detalles-equipo',
@@ -21,6 +22,7 @@ export class DetallesEquipoComponent implements OnInit{
   route: ActivatedRoute = inject(ActivatedRoute);
   router: Router = inject(Router);
   equipoService = inject(EquiposService);
+  usuarioService = inject(AuthService);
 
   equipo: any = null;
   idEquipo = 0;
@@ -52,6 +54,28 @@ export class DetallesEquipoComponent implements OnInit{
       this.router.navigate(['/home']);
     }
   }
+ 
+
+  addToFavorites() {
+    this.usuarioService.addFavoriteTeam(this.equipo.name).subscribe((updatedUser) => {
+      if (updatedUser) {
+        alert(`¡${this.equipo.name} ha sido agregado a tus equipos favoritos!`);
+      } else {
+        alert("Hubo un error al agregar el equipo favorito.");
+      }
+    });
+  }
+  removeFavoriteTeam() {
+    this.usuarioService.removeFavoriteTeam().subscribe((updatedUser) => {
+      if (updatedUser) {
+        alert(`¡El equipo ha sido eliminado de tus favoritos!`);
+      } else {
+        alert("Hubo un error al eliminar el equipo favorito.");
+      }
+    });
+  }
+  
+  
 }
 
 

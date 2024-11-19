@@ -201,10 +201,46 @@
         width: 100%; /* Full width for details section */
     }
 }
-
-
-
-
 @keyframes fadeIn {
     to { opacity: 1; }
 }
+.button-container {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%; 
+    padding: 0 20px; 
+    margin-top: 20px;
+}
+
+.botonAgregar {
+    background-color: #32cd32; 
+    color: #f5f9fc;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.botonAgregar:hover {
+    background-color: #28a745; 
+}
+.btn-danger {
+    background-color: #e74c3c; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c0392b; 
+  }
+  
+  .mt-2 {
+    margin-top: 10px;
+  }
+  
