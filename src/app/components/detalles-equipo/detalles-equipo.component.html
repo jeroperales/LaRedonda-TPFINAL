@@ -11,7 +11,10 @@
             <p><span class="nombre-label">Estadio: </span><span class="nombre-value">{{equipo.stadium}}</span></p>
         </div>
 
-        <button class="botonVolver" (click)="goBack()"> VOLVER ATRAS</button>
-
+        <div class="button-container">
+            <button class="botonAgregar" (click)="addToFavorites()">Agregar Equipo Favorito</button>
+            <button  class="btn btn-danger mt-2" (click)="removeFavoriteTeam()">  Eliminar equipo favorito</button>
+            <button class="botonVolver" (click)="goBack()">VOLVER ATRÁS</button>
+        </div>
     </div>
 </body>

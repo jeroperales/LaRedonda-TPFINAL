@@ -93,4 +93,81 @@ export class AuthService {
     }
     return false;
   }
+
+  // funcion equipo favorito
+  addFavoriteTeam(equipo: string): Observable<User | null> {
+    const activeUser = this.getUserFromToken(); 
+    if (!activeUser || !activeUser.id) {
+      console.error("No hay un usuario activo");
+      return of(null);
+    }
+  
+    const updatePayload = { equipoFavorito: equipo };
+  
+    // Actualiza el usuario activo en el backend
+    return this.http.patch<User>(`${this.baseUrl}/${activeUser.id}`, updatePayload).pipe(
+      tap((updatedUser) => {
+        if (!updatedUser.username) {
+          throw new Error("El campo 'username' está ausente en el usuario actualizado");
+        }
+    
+
+        const token = JSON.stringify({
+          id: updatedUser.id,
+          username: updatedUser.username,
+          isAdmin: updatedUser.isAdmin,
+          equipoFavorito: updatedUser.equipoFavorito,
+        });
+        localStorage.setItem('token', token);
+    
+        this.activeUserSubject.next({
+          id: updatedUser.id,
+          username: updatedUser.username,
+        });
+      }),
+      catchError((error) => {
+        console.error("Error al agregar equipo favorito:", error);
+        return of(null);
+      })
+    );
+    
+  }
+
+/// funcion de eliminar equipo favorito
+removeFavoriteTeam(): Observable<User | null> {
+  const activeUser = this.getUserFromToken();
+  if (!activeUser || !activeUser.id) {
+    console.error("No hay un usuario activo");
+    return of(null);
+  }
+
+  const updatePayload = { equipoFavorito: null };
+
+  return this.http.patch<User>(`${this.baseUrl}/${activeUser.id}`, updatePayload).pipe(
+    tap((updatedUser) => {
+      const token = JSON.stringify({
+        id: updatedUser.id,
+        username: updatedUser.username,
+        isAdmin: updatedUser.isAdmin,
+        equipoFavorito: updatedUser.equipoFavorito, // Será null
+      });
+      localStorage.setItem('token', token);
+
+      // Actualiza el estado del usuario activo
+      this.activeUserSubject.next({
+        id: updatedUser.id,
+        username: updatedUser.username,
+      });
+
+      console.log("Equipo favorito eliminado correctamente");
+    }),
+    catchError((error) => {
+      console.error("Error al eliminar equipo favorito:", error);
+      return of(null);
+    })
+  );
+}
+
+
+
 }

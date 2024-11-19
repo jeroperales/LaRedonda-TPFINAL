@@ -877,7 +877,15 @@
       "username": "jeroperales",
       "password": "123456",
       "email": "jeronimoperales1@gmail.com",
-      "isAdmin": true
+      "isAdmin": true,
+      "equipoFavorito": "Boca Juniors"
+    },
+    {
+      "id": "38e8",
+      "username": "giansicolo",
+      "password": "123456",
+      "email": "gian@gmail.com",
+      "equipoFavorito": null
     }
   ]
 }
