@@ -1,5 +1,6 @@
 import { inject, Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { environment } from '../../environments/environment.development';
 
 
 @Injectable({
@@ -10,7 +11,7 @@ export class ApiService {
   private apiUrl = 'https://v3.football.api-sports.io/';
 
   private headers = new HttpHeaders({
-    'x-rapidapi-key': '', // PONER CLAVE ACA
+    'x-rapidapi-key': environment.apiKey, // PONER CLAVE ACA
   });
 
   constructor(private http: HttpClient) {}

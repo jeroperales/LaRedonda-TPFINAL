@@ -886,6 +886,13 @@
       "password": "123456",
       "email": "gian@gmail.com",
       "equipoFavorito": null
+    },
+    {
+      "id": "da9f",
+      "username": "test",
+      "password": "123456",
+      "email": "hello@gmail.com",
+      "equipoFavorito": null
     }
   ]
 }
