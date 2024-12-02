@@ -1,0 +1,28 @@
+<div class="team-picker-container">
+    <!-- Player 1 -->
+    <div class="player-container">
+      <h2>Player 1</h2>
+      <div class="team-display">
+        <img src="LPF/empty.png" alt="Empty" *ngIf="!team1" />
+        <img [src]="team1.imageUrl" alt="{{ team1.name }}" *ngIf="team1" />
+        <p *ngIf="!team1">Empty</p>
+        <p *ngIf="team1">{{ team1.name }}</p>
+      </div>
+    </div>
+  
+    <!-- Player 2 -->
+    <div class="player-container">
+      <h2>Player 2</h2>
+      <div class="team-display">
+        <img src="LPF/empty.png" alt="Empty" *ngIf="!team2" />
+        <img [src]="team2.imageUrl" alt="{{ team2.name }}" *ngIf="team2" />
+        <p *ngIf="!team2">Empty</p>
+        <p *ngIf="team2">{{ team2.name }}</p>
+      </div>
+    </div>
+  
+    <!-- Button to choose teams -->
+    <div class="button-container">
+      <button (click)="randomizer()">Choose Team</button>
+    </div>
+  </div>

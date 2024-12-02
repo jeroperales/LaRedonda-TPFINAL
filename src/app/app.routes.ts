@@ -12,6 +12,7 @@ import { AdminGuard } from './guards/admin.guard';
 import { ModifyComponent } from './components/adminforms/modify/modify.component';
 import { DetallesEquipoComponent } from './components/detalles-equipo/detalles-equipo.component';
 import { HomeComponent } from './components/home/home.component';
+import { RandomComponent } from './components/random/random.component';
 
 export const routes: Routes = [
    
@@ -66,6 +67,11 @@ export const routes: Routes = [
           path: 'update/:id',
           component: ModifyComponent
         },
+        
+        {
+          path: 'random',
+          component: RandomComponent
+        },
 
 
         {
@@ -74,5 +80,6 @@ export const routes: Routes = [
         {
           path: '**', redirectTo: 'home', pathMatch: 'full'
         }
+
 
       ];

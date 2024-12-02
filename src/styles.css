@@ -3,8 +3,8 @@
 body {
   background: linear-gradient(lightgreen, rgb(2, 73, 26));
   background-repeat: no-repeat;
-  background-attachment: scroll; /* Gradient moves with content scroll */
-  min-height: 1vh; /* Ensures gradient covers the full viewport height */
+  background-attachment: scroll;
+  min-height: 1vh; 
   margin: 0;
 }
 
@@ -13,5 +13,5 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevents any unwanted horizontal scroll */
+  overflow-x: hidden; 
 }
