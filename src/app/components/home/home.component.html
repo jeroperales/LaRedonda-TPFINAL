@@ -7,24 +7,30 @@
 </head>
 <body>
 	<div class="wrap">
-	  <div class="search">
-		<input
-		  type="text"
-		  class="search-bar"
-		  placeholder="Buscar Equipo"
-		  [(ngModel)]="nombreEquipo"
-		  (keyup.enter)="buscarEquipo()"
-		/>
-		<button class="search-btn"  (click)="buscarEquipo()">
+		<div class="search">
+		  <input
+			type="text"
+			class="search-bar"
+			placeholder="Buscar Equipo"
+			[(ngModel)]="nombreEquipo"
+			(keyup)="filterTeams()"
+		  />
+		  <button class="search-btn" (click)="buscarEquipo()">
 			🔍 <i class="fa fa-search"></i>
-		</button>
+		  </button>
+	  
+		  <!-- Suggestion List -->
+		  <ul class="suggestions" *ngIf="equiposFiltrados.length > 0">
+			<li *ngFor="let team of equiposFiltrados" (click)="selectTeam(team)">
+			  {{ team.name }}   ||  {{team.league}}
+			</li>
+		  </ul>
+		</div>
 	  </div>
-	</div>
-  </body>
+	  
 
-<body>
 
-	<div class="contenedor">
+	  <div class="contenedor">
 		<div class="contenedor-Equipos">
 			<a [routerLink]="['/equipos', 'LPF']">
 				<div class="card" style="background-image: url('Lpfjpg.jpg')">
@@ -80,6 +86,7 @@
 		</div>
 
 	</div>
+
 </body>
 </html>
 

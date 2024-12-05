@@ -9,6 +9,43 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+.suggestions {
+	position: absolute; 
+	top: 100%; 
+	left: 0; 
+	width: 100%; 
+	max-height: 200px; 
+	overflow-y: auto; 
+	background-color: rgba(10, 192, 55, 0.945); 
+	border: 1px solid #ccc; 
+	z-index: 1000; 
+	list-style: none; 
+	padding: 0; 
+	margin: 0; 
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .suggestions li {
+	padding: 8px;
+	cursor: pointer;
+  }
+  
+  .suggestions li:hover {
+	background: #828896b4;
+  }
+
+  .wrap {
+	position: relative; /* Makes the parent container a reference point for the dropdown */
+  }
+
+  .search-bar {
+	width: 100%; /* Ensures it stretches to fill its container */
+	padding: 8px; /* Adds internal spacing */
+	border: 1px solid #ccc; /* Adds a border */
+	border-radius: 4px; /* Rounds the edges */
+  }
+
+
 .contenedor {
 	width: 90%;
 	max-width: 1200px;
